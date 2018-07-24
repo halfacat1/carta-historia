@@ -1,0 +1,11 @@
+SELECT ?battle ?battleLabel ?pointInTime ?location ?locationLabel ?locationCoordinates
+WHERE {
+  ?battle wdt:P31 wd:Q178561 .
+  ?battle wdt:P585 ?pointInTime .
+  OPTIONAL {?battle wdt:P276 ?location} .
+  OPTIONAL {?battle wdt:P625 ?locationCoordinates}
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" .
+  }
+}
+ORDER BY ?pointInTime
