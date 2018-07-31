@@ -11,10 +11,10 @@ export class AppComponent implements OnInit{
   private view: vega.View;
 
   ngOnInit(): void {
-    console.log('wat');
+    let self = this;
     vega.loader()
-      .load('https://vega.github.io/vega/examples/bar-chart.vg.json')
-      .then(function(data) { this.view = this.render(JSON.parse(data)); });
+      .load('http://localhost:3000')
+      .then(function(data) { self.view = self.render(JSON.parse(data)); });
   }
 
   render(spec): vega.View {

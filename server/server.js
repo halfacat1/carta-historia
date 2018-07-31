@@ -1,6 +1,9 @@
-const express = require('express');
-const app = express();
 const fs = require("fs");
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+app.use(cors());
 
 app.get('/', (req, res) => {
   var ass = fs.readFileSync('./db/vegatest.vg.json');
