@@ -1,4 +1,4 @@
-SELECT ?battle ?battleLabel ?pointInTime ?location ?locationLabel ?locationCoordinates
+SELECT ?battle ?battleLabel (YEAR(?pointInTime) as ?year) ?location ?locationLabel ?locationCoordinates
 WHERE {
   ?battle wdt:P31 wd:Q178561 .
   ?battle wdt:P585 ?pointInTime .

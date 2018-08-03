@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v4.json",
-  "width": 400,
+  "width": 600,
   "height": 400,
+  "background": "#eef2e8",
   "padding": {"top": 0, "left": 0, "right": 0, "bottom": 0},
   "signals": [],
   "data": [
@@ -11,7 +12,40 @@
       "format": "json"
     }
   ],
-  "scales": [],
+  "scales": [
+    {
+      "name": "xYearScale",
+      "type": "linear",
+      "domain":{
+        "data": "battles",
+        "field": "year"
+      },
+      "range": "width"
+    }
+  ],
+  "axes": [
+    {"orient": "bottom", "scale": "xYearScale"}
+  ],
   "projections": [],
-  "marks": []
+  "marks": [
+    {
+      "type": "text",
+      "from": {
+        "data": "battles"
+      },
+      "encode": {
+        "enter": {
+          "text": { "value": "x" },
+          "align": { "value": "center"},
+          "baseline": { "value": "middle"},
+          "stroke": { "value": "#A32299" },
+          "x": {
+            "scale": "xYearScale",
+            "field": "year"
+          },
+          "y": { "signal": "height/2" }
+        }
+      }
+    }
+  ]
 }
