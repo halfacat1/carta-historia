@@ -1,8 +1,9 @@
-SELECT ?battle ?battleLabel (YEAR(?pointInTime) as ?year) ?location ?locationLabel ?locationCoordinates
+SELECT ?battle ?battleLabel (YEAR(?pointInTime) as ?year) ?location ?locationLabel ?locationCoordinates ?country ?countryLabel
 WHERE {
   ?battle wdt:P31 wd:Q178561 .
   ?battle wdt:P585 ?pointInTime .
-  OPTIONAL {?battle wdt:P276 ?location} .
+  ?battle wdt:P276 ?location .
+  OPTIONAL {?location wdt:P17 ?country}.  
   OPTIONAL {?battle wdt:P625 ?locationCoordinates}
   SERVICE wikibase:label {
     bd:serviceParam wikibase:language "en" .
