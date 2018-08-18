@@ -11,16 +11,16 @@
       "bind": {
         "input": "range",
         "min": -2500,
-        "max": 2500
+        "max": 2000
       }
     },
     {
       "name": "maxYearSignal",
-      "value": 2500,
+      "value": 2100,
       "bind": {
         "input": "range",
         "min": -2500,
-        "max": 2500
+        "max": 2100
       }
     }
   ],
@@ -41,7 +41,8 @@
       },
       "domainMin": {"signal": "minYearSignal"},
       "domainMax": {"signal": "maxYearSignal"},
-      "range": "width"
+      "range": "width",
+      "clamp":true
     },
     {
       "name": "yCountryScale",
@@ -57,16 +58,16 @@
   "projections": [],
   "marks": [
     {
-      "type": "text",
+      "type": "symbol",
       "from": {
         "data": "battles"
       },
       "encode": {
+        "enter": {
+          "stroke": { "value": "#A32299" }
+        },
         "update": {
-          "text": { "value": "x" },
-          "align": { "value": "center"},
-          "baseline": { "value": "middle"},
-          "stroke": { "value": "#A32299" },
+          
           "x": {
             "scale": "xYearScale",
             "field": "year"
