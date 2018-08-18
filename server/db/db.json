@@ -1,7 +1,7 @@
 [
   {
     "battle": "http://www.wikidata.org/entity/Q47220800",
-    "battleLabel": "Battle of Giants !!BATTLE OF RED CLIFFS IS MISSING BECAUSE LOCATION CONSTRAINT!!",
+    "battleLabel": "Battle of Giants",
     "year": "-2491",
     "location": "http://www.wikidata.org/entity/Q206895",
     "locationLabel": "Hakkâri",
@@ -191,21 +191,21 @@
     "countryLabel": "Greece"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1187461",
-    "battleLabel": "Battle of Tanagra",
-    "year": "-456",
-    "location": "http://www.wikidata.org/entity/Q779310",
-    "locationLabel": "Tanagra",
-    "country": "http://www.wikidata.org/entity/Q41",
-    "countryLabel": "Greece"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q975376",
     "battleLabel": "Battle of Oenophyta",
     "year": "-456",
     "location": "http://www.wikidata.org/entity/Q1229333",
     "locationLabel": "Oinofyta",
     "locationCoordinates": "Point(23.633333333 38.3)",
+    "country": "http://www.wikidata.org/entity/Q41",
+    "countryLabel": "Greece"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q1187461",
+    "battleLabel": "Battle of Tanagra",
+    "year": "-456",
+    "location": "http://www.wikidata.org/entity/Q779310",
+    "locationLabel": "Tanagra",
     "country": "http://www.wikidata.org/entity/Q41",
     "countryLabel": "Greece"
   },
@@ -389,21 +389,21 @@
     "countryLabel": "Greece"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1671704",
-    "battleLabel": "Battle of Nemea",
-    "year": "-393",
-    "location": "http://www.wikidata.org/entity/Q748108",
-    "locationLabel": "Nemea",
-    "country": "http://www.wikidata.org/entity/Q41",
-    "countryLabel": "Greece"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q733113",
     "battleLabel": "Battle of Coronea",
     "year": "-393",
     "location": "http://www.wikidata.org/entity/Q593295",
     "locationLabel": "Koroneia, Boeotia",
     "locationCoordinates": "Point(22.96666667 38.35)",
+    "country": "http://www.wikidata.org/entity/Q41",
+    "countryLabel": "Greece"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q1671704",
+    "battleLabel": "Battle of Nemea",
+    "year": "-393",
+    "location": "http://www.wikidata.org/entity/Q748108",
+    "locationLabel": "Nemea",
     "country": "http://www.wikidata.org/entity/Q41",
     "countryLabel": "Greece"
   },
@@ -705,6 +705,15 @@
     "countryLabel": "Italy"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q1482311",
+    "battleLabel": "Battle of Lake Vadimo",
+    "year": "-282",
+    "location": "http://www.wikidata.org/entity/Q3826072",
+    "locationLabel": "Lake Vadimo",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q2292431",
     "battleLabel": "Battle of Arretium",
     "year": "-282",
@@ -714,11 +723,11 @@
     "countryLabel": "Italy"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1482311",
-    "battleLabel": "Battle of Lake Vadimo",
-    "year": "-282",
-    "location": "http://www.wikidata.org/entity/Q3826072",
-    "locationLabel": "Lake Vadimo",
+    "battle": "http://www.wikidata.org/entity/Q744611",
+    "battleLabel": "Battle of Heraclea",
+    "year": "-279",
+    "location": "http://www.wikidata.org/entity/Q52327",
+    "locationLabel": "Policoro",
     "country": "http://www.wikidata.org/entity/Q38",
     "countryLabel": "Italy"
   },
@@ -733,11 +742,12 @@
     "countryLabel": "Italy"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q744611",
-    "battleLabel": "Battle of Heraclea",
-    "year": "-279",
-    "location": "http://www.wikidata.org/entity/Q52327",
-    "locationLabel": "Policoro",
+    "battle": "http://www.wikidata.org/entity/Q756413",
+    "battleLabel": "Battle of Asculum",
+    "year": "-278",
+    "location": "http://www.wikidata.org/entity/Q51892",
+    "locationLabel": "Ascoli Satriano",
+    "locationCoordinates": "Point(15.5578 41.2156)",
     "country": "http://www.wikidata.org/entity/Q38",
     "countryLabel": "Italy"
   },
@@ -750,16 +760,6 @@
     "locationCoordinates": "Point(22.5628 38.8053)",
     "country": "http://www.wikidata.org/entity/Q41",
     "countryLabel": "Greece"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q756413",
-    "battleLabel": "Battle of Asculum",
-    "year": "-278",
-    "location": "http://www.wikidata.org/entity/Q51892",
-    "locationLabel": "Ascoli Satriano",
-    "locationCoordinates": "Point(15.5578 41.2156)",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q4873050",
@@ -1141,6 +1141,25 @@
     "countryLabel": "Italy"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q2586793",
+    "battleLabel": "Battle of Beneventum (212 BC)",
+    "year": "-211",
+    "location": "http://www.wikidata.org/entity/Q13437",
+    "locationLabel": "Benevento",
+    "locationCoordinates": "Point(14.7833 41.1333)",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2632522",
+    "battleLabel": "Battle of Tarentum (212 BC)",
+    "year": "-211",
+    "location": "http://www.wikidata.org/entity/Q13498",
+    "locationLabel": "Taranto",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q1362014",
     "battleLabel": "Battle of the Silarus",
     "year": "-211",
@@ -1166,25 +1185,6 @@
     "location": "http://www.wikidata.org/entity/Q51938",
     "locationLabel": "Ordona",
     "locationCoordinates": "Point(15.6333333 41.3166667)",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q2586793",
-    "battleLabel": "Battle of Beneventum (212 BC)",
-    "year": "-211",
-    "location": "http://www.wikidata.org/entity/Q13437",
-    "locationLabel": "Benevento",
-    "locationCoordinates": "Point(14.7833 41.1333)",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q2632522",
-    "battleLabel": "Battle of Tarentum (212 BC)",
-    "year": "-211",
-    "location": "http://www.wikidata.org/entity/Q13498",
-    "locationLabel": "Taranto",
     "country": "http://www.wikidata.org/entity/Q38",
     "countryLabel": "Italy"
   },
@@ -1246,6 +1246,26 @@
     "countryLabel": "Italy"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q778730",
+    "battleLabel": "Battle of Canusium",
+    "year": "-208",
+    "location": "http://www.wikidata.org/entity/Q23187",
+    "locationLabel": "Canosa di Puglia",
+    "locationCoordinates": "Point(16.066027777 41.236638888)",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q778730",
+    "battleLabel": "Battle of Canusium",
+    "year": "-208",
+    "location": "http://www.wikidata.org/entity/Q51892",
+    "locationLabel": "Ascoli Satriano",
+    "locationCoordinates": "Point(16.066027777 41.236638888)",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q1591145",
     "battleLabel": "Battle of Cartagena (209 BC)",
     "year": "-208",
@@ -1282,26 +1302,6 @@
     "countryLabel": "Italy"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q778730",
-    "battleLabel": "Battle of Canusium",
-    "year": "-208",
-    "location": "http://www.wikidata.org/entity/Q23187",
-    "locationLabel": "Canosa di Puglia",
-    "locationCoordinates": "Point(16.066027777 41.236638888)",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q778730",
-    "battleLabel": "Battle of Canusium",
-    "year": "-208",
-    "location": "http://www.wikidata.org/entity/Q51892",
-    "locationLabel": "Ascoli Satriano",
-    "locationCoordinates": "Point(16.066027777 41.236638888)",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q728550",
     "battleLabel": "Battle of Baecula",
     "year": "-207",
@@ -1322,6 +1322,15 @@
     "countryLabel": "Italy"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q1500202",
+    "battleLabel": "Battle of Grumentum",
+    "year": "-206",
+    "location": "http://www.wikidata.org/entity/Q1550380",
+    "locationLabel": "Grumentum",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q2330778",
     "battleLabel": "Battle of Mantinea",
     "year": "-206",
@@ -1330,15 +1339,6 @@
     "locationCoordinates": "Point(22.4 37.6)",
     "country": "http://www.wikidata.org/entity/Q41",
     "countryLabel": "Greece"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q1500202",
-    "battleLabel": "Battle of Grumentum",
-    "year": "-206",
-    "location": "http://www.wikidata.org/entity/Q1550380",
-    "locationLabel": "Grumentum",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q4870658",
@@ -1379,16 +1379,6 @@
     "countryLabel": "Italy"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1353773",
-    "battleLabel": "Battle of the Great Plains",
-    "year": "-202",
-    "location": "http://www.wikidata.org/entity/Q166523",
-    "locationLabel": "Utica",
-    "locationCoordinates": "Point(10.06259722 37.05794444)",
-    "country": "http://www.wikidata.org/entity/Q948",
-    "countryLabel": "Tunisia"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q1660792",
     "battleLabel": "Battle of Cirta",
     "year": "-202",
@@ -1415,6 +1405,16 @@
     "locationLabel": "Insubria",
     "country": "http://www.wikidata.org/entity/Q39",
     "countryLabel": "Switzerland"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q1353773",
+    "battleLabel": "Battle of the Great Plains",
+    "year": "-202",
+    "location": "http://www.wikidata.org/entity/Q166523",
+    "locationLabel": "Utica",
+    "locationCoordinates": "Point(10.06259722 37.05794444)",
+    "country": "http://www.wikidata.org/entity/Q948",
+    "countryLabel": "Tunisia"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2888065",
@@ -1466,6 +1466,16 @@
     "countryLabel": "Greece"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q11908765",
+    "battleLabel": "Q11908765",
+    "year": "-194",
+    "location": "http://www.wikidata.org/entity/Q1094405",
+    "locationLabel": "Ciutadella de Roses",
+    "locationCoordinates": "Point(3.17944444 42.26388889)",
+    "country": "http://www.wikidata.org/entity/Q29",
+    "countryLabel": "Spain"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q8244435",
     "battleLabel": "Q8244435",
     "year": "-194",
@@ -1482,16 +1492,6 @@
     "location": "http://www.wikidata.org/entity/Q1229367",
     "locationLabel": "Empúries",
     "locationCoordinates": "Point(3.11666667 42.13333333)",
-    "country": "http://www.wikidata.org/entity/Q29",
-    "countryLabel": "Spain"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q11908765",
-    "battleLabel": "Q11908765",
-    "year": "-194",
-    "location": "http://www.wikidata.org/entity/Q1094405",
-    "locationLabel": "Ciutadella de Roses",
-    "locationCoordinates": "Point(3.17944444 42.26388889)",
     "country": "http://www.wikidata.org/entity/Q29",
     "countryLabel": "Spain"
   },
@@ -1551,8 +1551,8 @@
     "location": "http://www.wikidata.org/entity/Q168225",
     "locationLabel": "Hebron",
     "locationCoordinates": "Point(35.094155 31.589383)",
-    "country": "http://www.wikidata.org/entity/Q42620",
-    "countryLabel": "Palestinian National Authority"
+    "country": "http://www.wikidata.org/entity/Q219060",
+    "countryLabel": "State of Palestine"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q9173324",
@@ -1801,15 +1801,6 @@
     "countryLabel": "Switzerland"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2890308",
-    "battleLabel": "Battle of Vernix",
-    "year": "-55",
-    "location": "http://www.wikidata.org/entity/Q940584",
-    "locationLabel": "Vernix",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q742306",
     "battleLabel": "Caesar's invasions of Britain",
     "year": "-55",
@@ -1818,6 +1809,15 @@
     "locationCoordinates": "Point(1.3089 51.1295)",
     "country": "http://www.wikidata.org/entity/Q145",
     "countryLabel": "United Kingdom"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2890308",
+    "battleLabel": "Battle of Vernix",
+    "year": "-55",
+    "location": "http://www.wikidata.org/entity/Q940584",
+    "locationLabel": "Vernix",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q15934409",
@@ -1889,15 +1889,6 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2889276",
-    "battleLabel": "Q2889276",
-    "year": "-48",
-    "location": "http://www.wikidata.org/entity/Q23482",
-    "locationLabel": "Marseille",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2416094",
     "battleLabel": "Battle of Utica",
     "year": "-48",
@@ -1906,6 +1897,15 @@
     "locationCoordinates": "Point(10.06259722 37.05794444)",
     "country": "http://www.wikidata.org/entity/Q948",
     "countryLabel": "Tunisia"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2889276",
+    "battleLabel": "Q2889276",
+    "year": "-48",
+    "location": "http://www.wikidata.org/entity/Q23482",
+    "locationLabel": "Marseille",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q619030",
@@ -2260,21 +2260,21 @@
     "countryLabel": "People's Republic of China"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q692513",
-    "battleLabel": "Battle of Yiling",
-    "year": "208",
-    "location": "http://www.wikidata.org/entity/Q71266",
-    "locationLabel": "Yichang",
-    "country": "http://www.wikidata.org/entity/Q148",
-    "countryLabel": "People's Republic of China"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q830059",
     "battleLabel": "Battle of Red Cliffs",
     "year": "208",
     "location": "http://www.wikidata.org/entity/Q5413",
     "locationLabel": "Yangtze",
     "locationCoordinates": "Point(113.620277777 29.869722222)",
+    "country": "http://www.wikidata.org/entity/Q148",
+    "countryLabel": "People's Republic of China"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q692513",
+    "battleLabel": "Battle of Yiling",
+    "year": "208",
+    "location": "http://www.wikidata.org/entity/Q71266",
+    "locationLabel": "Yichang",
     "country": "http://www.wikidata.org/entity/Q148",
     "countryLabel": "People's Republic of China"
   },
@@ -2444,6 +2444,16 @@
     "countryLabel": "Serbia"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q762600",
+    "battleLabel": "Battle of Fano",
+    "year": "271",
+    "location": "http://www.wikidata.org/entity/Q653678",
+    "locationLabel": "Metauro",
+    "locationCoordinates": "Point(13.0167 43.8333)",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q1289831",
     "battleLabel": "Battle of Pavia",
     "year": "271",
@@ -2458,16 +2468,6 @@
     "location": "http://www.wikidata.org/entity/Q13329",
     "locationLabel": "Piacenza",
     "locationCoordinates": "Point(9.7 45.05)",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q762600",
-    "battleLabel": "Battle of Fano",
-    "year": "271",
-    "location": "http://www.wikidata.org/entity/Q653678",
-    "locationLabel": "Metauro",
-    "locationCoordinates": "Point(13.0167 43.8333)",
     "country": "http://www.wikidata.org/entity/Q38",
     "countryLabel": "Italy"
   },
@@ -2575,22 +2575,22 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q585291",
-    "battleLabel": "Siege of Autun",
-    "year": "356",
-    "location": "http://www.wikidata.org/entity/Q190827",
-    "locationLabel": "Autun",
-    "locationCoordinates": "Point(4.3 46.95)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q1583689",
     "battleLabel": "Battle of Brumath",
     "year": "356",
     "location": "http://www.wikidata.org/entity/Q22637",
     "locationLabel": "Brumath",
     "locationCoordinates": "Point(7.70917 48.7328)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q585291",
+    "battleLabel": "Siege of Autun",
+    "year": "356",
+    "location": "http://www.wikidata.org/entity/Q190827",
+    "locationLabel": "Autun",
+    "locationCoordinates": "Point(4.3 46.95)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -2641,6 +2641,15 @@
     "locationCoordinates": "Point(43.476944444 39.608333333)",
     "country": "http://www.wikidata.org/entity/Q399",
     "countryLabel": "Armenia"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q27953368",
+    "battleLabel": "Battle of Pyongyang (371)",
+    "year": "371",
+    "location": "http://www.wikidata.org/entity/Q18808",
+    "locationLabel": "Pyongyang",
+    "country": "http://www.wikidata.org/entity/Q423",
+    "countryLabel": "North Korea"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q4873022",
@@ -3803,6 +3812,25 @@
     "countryLabel": "Iraq"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q738132",
+    "battleLabel": "Battle of Firaz",
+    "year": "634",
+    "location": "http://www.wikidata.org/entity/Q796",
+    "locationLabel": "Iraq",
+    "country": "http://www.wikidata.org/entity/Q796",
+    "countryLabel": "Iraq"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q956923",
+    "battleLabel": "Battle of Heavenfield",
+    "year": "634",
+    "location": "http://www.wikidata.org/entity/Q947400",
+    "locationLabel": "Hexham",
+    "locationCoordinates": "Point(-2.1 55.02)",
+    "country": "http://www.wikidata.org/entity/Q145",
+    "countryLabel": "United Kingdom"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q888904",
     "battleLabel": "Battle of Ajnadayn",
     "year": "634",
@@ -3821,25 +3849,6 @@
     "locationCoordinates": "Point(34.95 31.68333333)",
     "country": "http://www.wikidata.org/entity/Q12544",
     "countryLabel": "Byzantine Empire"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q956923",
-    "battleLabel": "Battle of Heavenfield",
-    "year": "634",
-    "location": "http://www.wikidata.org/entity/Q947400",
-    "locationLabel": "Hexham",
-    "locationCoordinates": "Point(-2.1 55.02)",
-    "country": "http://www.wikidata.org/entity/Q145",
-    "countryLabel": "United Kingdom"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q738132",
-    "battleLabel": "Battle of Firaz",
-    "year": "634",
-    "location": "http://www.wikidata.org/entity/Q796",
-    "locationLabel": "Iraq",
-    "country": "http://www.wikidata.org/entity/Q796",
-    "countryLabel": "Iraq"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q4871856",
@@ -4431,16 +4440,6 @@
     "locationCoordinates": "Point(4.360054 43.836699)"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q587908",
-    "battleLabel": "Battle of Narbonne",
-    "year": "737",
-    "location": "http://www.wikidata.org/entity/Q6555",
-    "locationLabel": "Narbonne",
-    "locationCoordinates": "Point(3.003078 43.184277)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q1508114",
     "battleLabel": "Battle of the River Berre",
     "year": "737",
@@ -4457,6 +4456,16 @@
     "location": "http://www.wikidata.org/entity/Q6397",
     "locationLabel": "Avignon",
     "locationCoordinates": "Point(4.81667 43.95)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q587908",
+    "battleLabel": "Battle of Narbonne",
+    "year": "737",
+    "location": "http://www.wikidata.org/entity/Q6555",
+    "locationLabel": "Narbonne",
+    "locationCoordinates": "Point(3.003078 43.184277)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -4785,15 +4794,6 @@
     "countryLabel": "Bulgaria"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2713449",
-    "battleLabel": "Siege of Adrianople",
-    "year": "813",
-    "location": "http://www.wikidata.org/entity/Q43387",
-    "locationLabel": "Edirne",
-    "country": "http://www.wikidata.org/entity/Q43",
-    "countryLabel": "Turkey"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q3181408",
     "battleLabel": "Siege of Constantinople",
     "year": "813",
@@ -4819,6 +4819,15 @@
     "locationLabel": "Constantinople",
     "country": "http://www.wikidata.org/entity/Q178897",
     "countryLabel": "Latin Empire"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2713449",
+    "battleLabel": "Siege of Adrianople",
+    "year": "813",
+    "location": "http://www.wikidata.org/entity/Q43387",
+    "locationLabel": "Edirne",
+    "country": "http://www.wikidata.org/entity/Q43",
+    "countryLabel": "Turkey"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q11908753",
@@ -5822,15 +5831,6 @@
     "countryLabel": "Ireland"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1355177",
-    "battleLabel": "Battle of Pankalia",
-    "year": "978",
-    "location": "http://www.wikidata.org/entity/Q174270",
-    "locationLabel": "Amorium",
-    "country": "http://www.wikidata.org/entity/Q43",
-    "countryLabel": "Turkey"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q538947",
     "battleLabel": "Battle of Cathair Cuan",
     "year": "978",
@@ -5838,6 +5838,15 @@
     "locationLabel": "County Limerick",
     "country": "http://www.wikidata.org/entity/Q27",
     "countryLabel": "Ireland"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q1355177",
+    "battleLabel": "Battle of Pankalia",
+    "year": "978",
+    "location": "http://www.wikidata.org/entity/Q174270",
+    "locationLabel": "Amorium",
+    "country": "http://www.wikidata.org/entity/Q43",
+    "countryLabel": "Turkey"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q4870447",
@@ -6509,7 +6518,9 @@
     "year": "1044",
     "location": "http://www.wikidata.org/entity/Q1212890",
     "locationLabel": "Ménfőcsanak",
-    "locationCoordinates": "Point(17.63444444 47.68416667)"
+    "locationCoordinates": "Point(17.63444444 47.68416667)",
+    "country": "http://www.wikidata.org/entity/Q28",
+    "countryLabel": "Hungary"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q1424959",
@@ -6768,15 +6779,6 @@
     "countryLabel": "United Kingdom"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2887981",
-    "battleLabel": "Battle of Iconium",
-    "year": "1069",
-    "location": "http://www.wikidata.org/entity/Q79857",
-    "locationLabel": "Konya",
-    "country": "http://www.wikidata.org/entity/Q43",
-    "countryLabel": "Turkey"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q3403450",
     "battleLabel": "Battle of Mechain",
     "year": "1069",
@@ -6785,6 +6787,15 @@
     "locationCoordinates": "Point(-3.204 52.776)",
     "country": "http://www.wikidata.org/entity/Q145",
     "countryLabel": "United Kingdom"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2887981",
+    "battleLabel": "Battle of Iconium",
+    "year": "1069",
+    "location": "http://www.wikidata.org/entity/Q79857",
+    "locationLabel": "Konya",
+    "country": "http://www.wikidata.org/entity/Q43",
+    "countryLabel": "Turkey"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q13126301",
@@ -7108,7 +7119,7 @@
     "year": "1099",
     "location": "http://www.wikidata.org/entity/Q60956",
     "locationLabel": "Ashkelon",
-    "locationCoordinates": "Point(34.558052777 31.670438888)",
+    "locationCoordinates": "Point(34.558055555 31.670555555)",
     "country": "http://www.wikidata.org/entity/Q801",
     "countryLabel": "Israel"
   },
@@ -7856,6 +7867,24 @@
     "countryLabel": "United Kingdom"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q51913480",
+    "battleLabel": "Siege of Paneas",
+    "year": "1157",
+    "location": "http://www.wikidata.org/entity/Q606295",
+    "locationLabel": "Banias",
+    "country": "http://www.wikidata.org/entity/Q801",
+    "countryLabel": "Israel"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q51913480",
+    "battleLabel": "Siege of Paneas",
+    "year": "1157",
+    "location": "http://www.wikidata.org/entity/Q606295",
+    "locationLabel": "Banias",
+    "country": "http://www.wikidata.org/entity/Q858",
+    "countryLabel": "Syria"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q2890906",
     "battleLabel": "Battle of Lake Huleh",
     "year": "1157",
@@ -8009,15 +8038,6 @@
     "countryLabel": "Russia"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q20584525",
-    "battleLabel": "Battle of Pentraeth",
-    "year": "1170",
-    "location": "http://www.wikidata.org/entity/Q2278993",
-    "locationLabel": "Pentraeth",
-    "country": "http://www.wikidata.org/entity/Q145",
-    "countryLabel": "United Kingdom"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q51908636",
     "battleLabel": "Q51908636",
     "year": "1170",
@@ -8025,6 +8045,15 @@
     "locationLabel": "Gaza City",
     "country": "http://www.wikidata.org/entity/Q219060",
     "countryLabel": "State of Palestine"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q20584525",
+    "battleLabel": "Battle of Pentraeth",
+    "year": "1170",
+    "location": "http://www.wikidata.org/entity/Q2278993",
+    "locationLabel": "Pentraeth",
+    "country": "http://www.wikidata.org/entity/Q145",
+    "countryLabel": "United Kingdom"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q3486053",
@@ -8473,7 +8502,7 @@
     "battleLabel": "Battle of Kawajiri",
     "year": "1185",
     "location": "http://www.wikidata.org/entity/Q11589632",
-    "locationLabel": "Q11589632",
+    "locationLabel": "Kanzaki River",
     "locationCoordinates": "Point(135.425083333 34.71525)",
     "country": "http://www.wikidata.org/entity/Q17",
     "countryLabel": "Japan"
@@ -8878,25 +8907,6 @@
     "countryLabel": "Sweden"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1364027",
-    "battleLabel": "Battle of Antioch on the Meander",
-    "year": "1211",
-    "location": "http://www.wikidata.org/entity/Q51614",
-    "locationLabel": "Anatolia",
-    "locationCoordinates": "Point(28.574239 37.873435)",
-    "country": "http://www.wikidata.org/entity/Q43",
-    "countryLabel": "Turkey"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q684482",
-    "battleLabel": "Battle of Ulrichen",
-    "year": "1211",
-    "location": "http://www.wikidata.org/entity/Q662247",
-    "locationLabel": "Ulrichen",
-    "country": "http://www.wikidata.org/entity/Q39",
-    "countryLabel": "Switzerland"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q3736445",
     "battleLabel": "Battle of Viljandi",
     "year": "1211",
@@ -8914,6 +8924,25 @@
     "locationLabel": "Turaida",
     "country": "http://www.wikidata.org/entity/Q211",
     "countryLabel": "Latvia"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q684482",
+    "battleLabel": "Battle of Ulrichen",
+    "year": "1211",
+    "location": "http://www.wikidata.org/entity/Q662247",
+    "locationLabel": "Ulrichen",
+    "country": "http://www.wikidata.org/entity/Q39",
+    "countryLabel": "Switzerland"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q1364027",
+    "battleLabel": "Battle of Antioch on the Meander",
+    "year": "1211",
+    "location": "http://www.wikidata.org/entity/Q51614",
+    "locationLabel": "Anatolia",
+    "locationCoordinates": "Point(28.574239 37.873435)",
+    "country": "http://www.wikidata.org/entity/Q43",
+    "countryLabel": "Turkey"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2750179",
@@ -8985,15 +9014,6 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q396501",
-    "battleLabel": "Battle of Lehola",
-    "year": "1215",
-    "location": "http://www.wikidata.org/entity/Q3466834",
-    "locationLabel": "Lõhavere",
-    "country": "http://www.wikidata.org/entity/Q191",
-    "countryLabel": "Estonia"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q954923",
     "battleLabel": "Battle of Zhongdu",
     "year": "1215",
@@ -9001,6 +9021,15 @@
     "locationLabel": "Beijing",
     "country": "http://www.wikidata.org/entity/Q148",
     "countryLabel": "People's Republic of China"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q396501",
+    "battleLabel": "Battle of Lehola",
+    "year": "1215",
+    "location": "http://www.wikidata.org/entity/Q3466834",
+    "locationLabel": "Lõhavere",
+    "country": "http://www.wikidata.org/entity/Q191",
+    "countryLabel": "Estonia"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q3738418",
@@ -9941,7 +9970,7 @@
     "battleLabel": "Battle of Salé",
     "year": "1260",
     "location": "http://www.wikidata.org/entity/Q466046",
-    "locationLabel": "Salé",
+    "locationLabel": "Saleh",
     "country": "http://www.wikidata.org/entity/Q1028",
     "countryLabel": "Morocco"
   },
@@ -10004,15 +10033,6 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2889207",
-    "battleLabel": "Battle of Makryplagi",
-    "year": "1263",
-    "location": "http://www.wikidata.org/entity/Q200315",
-    "locationLabel": "Messenia",
-    "country": "http://www.wikidata.org/entity/Q41",
-    "countryLabel": "Greece"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2889701",
     "battleLabel": "Battle of Prinitza",
     "year": "1263",
@@ -10039,6 +10059,15 @@
     "locationCoordinates": "Point(19.75 53.5)",
     "country": "http://www.wikidata.org/entity/Q36",
     "countryLabel": "Poland"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2889207",
+    "battleLabel": "Battle of Makryplagi",
+    "year": "1263",
+    "location": "http://www.wikidata.org/entity/Q200315",
+    "locationLabel": "Messenia",
+    "country": "http://www.wikidata.org/entity/Q41",
+    "countryLabel": "Greece"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2097266",
@@ -10443,16 +10472,6 @@
     "countryLabel": "Spain"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q18005571",
-    "battleLabel": "Q18005571",
-    "year": "1285",
-    "location": "http://www.wikidata.org/entity/Q11803",
-    "locationLabel": "Peralada",
-    "locationCoordinates": "Point(3.0 42.3)",
-    "country": "http://www.wikidata.org/entity/Q29",
-    "countryLabel": "Spain"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q11945464",
     "battleLabel": "Q11945464",
     "year": "1285",
@@ -10461,6 +10480,16 @@
     "locationCoordinates": "Point(2.88333333 42.86527778)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q18005571",
+    "battleLabel": "Q18005571",
+    "year": "1285",
+    "location": "http://www.wikidata.org/entity/Q11803",
+    "locationLabel": "Peralada",
+    "locationCoordinates": "Point(3.0 42.3)",
+    "country": "http://www.wikidata.org/entity/Q29",
+    "countryLabel": "Spain"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q11914880",
@@ -10874,26 +10903,6 @@
     "countryLabel": "United States of America"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q11908715",
-    "battleLabel": "Q11908715",
-    "year": "1304",
-    "location": "http://www.wikidata.org/entity/Q51614",
-    "locationLabel": "Anatolia",
-    "locationCoordinates": "Point(28.51666667 38.35)",
-    "country": "http://www.wikidata.org/entity/Q43",
-    "countryLabel": "Turkey"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q11908717",
-    "battleLabel": "Q11908717",
-    "year": "1304",
-    "location": "http://www.wikidata.org/entity/Q51614",
-    "locationLabel": "Anatolia",
-    "locationCoordinates": "Point(27.25 37.85)",
-    "country": "http://www.wikidata.org/entity/Q43",
-    "countryLabel": "Turkey"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q11908742",
     "battleLabel": "Q11908742",
     "year": "1304",
@@ -10912,6 +10921,26 @@
     "locationCoordinates": "Point(27.73333333 38.08333333)",
     "country": "http://www.wikidata.org/entity/Q212",
     "countryLabel": "Ukraine"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q11908715",
+    "battleLabel": "Q11908715",
+    "year": "1304",
+    "location": "http://www.wikidata.org/entity/Q51614",
+    "locationLabel": "Anatolia",
+    "locationCoordinates": "Point(28.51666667 38.35)",
+    "country": "http://www.wikidata.org/entity/Q43",
+    "countryLabel": "Turkey"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q11908717",
+    "battleLabel": "Q11908717",
+    "year": "1304",
+    "location": "http://www.wikidata.org/entity/Q51614",
+    "locationLabel": "Anatolia",
+    "locationCoordinates": "Point(27.25 37.85)",
+    "country": "http://www.wikidata.org/entity/Q43",
+    "countryLabel": "Turkey"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2007565",
@@ -11960,15 +11989,6 @@
     "countryLabel": "Greece"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2888325",
-    "battleLabel": "Q2888325",
-    "year": "1353",
-    "location": "http://www.wikidata.org/entity/Q191126",
-    "locationLabel": "Saintes",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q4872773",
     "battleLabel": "Battle of Yawata",
     "year": "1353",
@@ -11976,6 +11996,15 @@
     "locationLabel": "Yawata",
     "country": "http://www.wikidata.org/entity/Q17",
     "countryLabel": "Japan"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2888325",
+    "battleLabel": "Q2888325",
+    "year": "1353",
+    "location": "http://www.wikidata.org/entity/Q191126",
+    "locationLabel": "Saintes",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q916266",
@@ -12830,6 +12859,15 @@
     "countryLabel": "United Kingdom"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q4870259",
+    "battleLabel": "Battle of Algami Canal",
+    "year": "1402",
+    "location": "http://www.wikidata.org/entity/Q796",
+    "locationLabel": "Iraq",
+    "country": "http://www.wikidata.org/entity/Q796",
+    "countryLabel": "Iraq"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q4871876",
     "battleLabel": "Battle of Nesbit Moor",
     "year": "1402",
@@ -12838,15 +12876,6 @@
     "locationCoordinates": "Point(-2.29472222 55.75638889)",
     "country": "http://www.wikidata.org/entity/Q145",
     "countryLabel": "United Kingdom"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q4870259",
-    "battleLabel": "Battle of Algami Canal",
-    "year": "1402",
-    "location": "http://www.wikidata.org/entity/Q796",
-    "locationLabel": "Iraq",
-    "country": "http://www.wikidata.org/entity/Q796",
-    "countryLabel": "Iraq"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2984951",
@@ -13247,7 +13276,7 @@
     "battleLabel": "Battle of Sudoměř",
     "year": "1420",
     "location": "http://www.wikidata.org/entity/Q12057197",
-    "locationLabel": "Q12057197",
+    "locationLabel": "Sudoměř (Čejetice)",
     "locationCoordinates": "Point(14.06388889 49.24194444)",
     "country": "http://www.wikidata.org/entity/Q213",
     "countryLabel": "Czech Republic"
@@ -17235,15 +17264,6 @@
     "countryLabel": "United Kingdom"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q11427930",
-    "battleLabel": "Battle of Katata",
-    "year": "1586",
-    "location": "http://www.wikidata.org/entity/Q847546",
-    "locationLabel": "Saiki",
-    "country": "http://www.wikidata.org/entity/Q17",
-    "countryLabel": "Japan"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q4871547",
     "battleLabel": "Battle of Leckmelm",
     "year": "1586",
@@ -17252,6 +17272,15 @@
     "locationCoordinates": "Point(-5.0939 57.869)",
     "country": "http://www.wikidata.org/entity/Q145",
     "countryLabel": "United Kingdom"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q11427930",
+    "battleLabel": "Battle of Katata",
+    "year": "1586",
+    "location": "http://www.wikidata.org/entity/Q847546",
+    "locationLabel": "Saiki",
+    "country": "http://www.wikidata.org/entity/Q17",
+    "countryLabel": "Japan"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2888174",
@@ -17436,6 +17465,24 @@
     "locationCoordinates": "Point(128.5025 34.762222222)",
     "country": "http://www.wikidata.org/entity/Q884",
     "countryLabel": "South Korea"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q21060235",
+    "battleLabel": "Battle of Pyongyang (August 1592)",
+    "year": "1592",
+    "location": "http://www.wikidata.org/entity/Q18808",
+    "locationLabel": "Pyongyang",
+    "country": "http://www.wikidata.org/entity/Q423",
+    "countryLabel": "North Korea"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q21060239",
+    "battleLabel": "Battle of Pyongyang (September 1592)",
+    "year": "1592",
+    "location": "http://www.wikidata.org/entity/Q18808",
+    "locationLabel": "Pyongyang",
+    "country": "http://www.wikidata.org/entity/Q423",
+    "countryLabel": "North Korea"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q4087397",
@@ -17911,6 +17958,16 @@
     "countryLabel": "Japan"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q1002716",
+    "battleLabel": "Battle of Dōmyōji",
+    "year": "1615",
+    "location": "http://www.wikidata.org/entity/Q18700110",
+    "locationLabel": "Q18700110",
+    "locationCoordinates": "Point(135.620055555 34.567611111)",
+    "country": "http://www.wikidata.org/entity/Q17",
+    "countryLabel": "Japan"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q2530449",
     "battleLabel": "Battle of Tennōji",
     "year": "1615",
@@ -17927,16 +17984,6 @@
     "location": "http://www.wikidata.org/entity/Q11488829",
     "locationLabel": "Q11488829",
     "locationCoordinates": "Point(135.511166666 34.654361111)",
-    "country": "http://www.wikidata.org/entity/Q17",
-    "countryLabel": "Japan"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q1002716",
-    "battleLabel": "Battle of Dōmyōji",
-    "year": "1615",
-    "location": "http://www.wikidata.org/entity/Q18700110",
-    "locationLabel": "Q18700110",
-    "locationCoordinates": "Point(135.620055555 34.567611111)",
     "country": "http://www.wikidata.org/entity/Q17",
     "countryLabel": "Japan"
   },
@@ -18407,16 +18454,6 @@
     "countryLabel": "Germany"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2330975",
-    "battleLabel": "Siege of Breda",
-    "year": "1637",
-    "location": "http://www.wikidata.org/entity/Q40844",
-    "locationLabel": "Breda",
-    "locationCoordinates": "Point(4.8 51.56666667)",
-    "country": "http://www.wikidata.org/entity/Q55",
-    "countryLabel": "Netherlands"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2890715",
     "battleLabel": "Q2890715",
     "year": "1637",
@@ -18425,6 +18462,16 @@
     "locationCoordinates": "Point(7.05222 43.5147)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2330975",
+    "battleLabel": "Siege of Breda",
+    "year": "1637",
+    "location": "http://www.wikidata.org/entity/Q40844",
+    "locationLabel": "Breda",
+    "locationCoordinates": "Point(4.8 51.56666667)",
+    "country": "http://www.wikidata.org/entity/Q55",
+    "countryLabel": "Netherlands"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2889138",
@@ -19786,22 +19833,22 @@
     "countryLabel": "Poland"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q426926",
-    "battleLabel": "Battle of Warsaw (1656)",
-    "year": "1656",
-    "location": "http://www.wikidata.org/entity/Q270",
-    "locationLabel": "Warsaw",
-    "locationCoordinates": "Point(21.0084 52.2323)",
-    "country": "http://www.wikidata.org/entity/Q36",
-    "countryLabel": "Poland"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q964544",
     "battleLabel": "Siege of Warsaw",
     "year": "1656",
     "location": "http://www.wikidata.org/entity/Q270",
     "locationLabel": "Warsaw",
     "locationCoordinates": "Point(21.0167 52.2333)",
+    "country": "http://www.wikidata.org/entity/Q36",
+    "countryLabel": "Poland"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q426926",
+    "battleLabel": "Battle of Warsaw (1656)",
+    "year": "1656",
+    "location": "http://www.wikidata.org/entity/Q270",
+    "locationLabel": "Warsaw",
+    "locationCoordinates": "Point(21.0084 52.2323)",
     "country": "http://www.wikidata.org/entity/Q36",
     "countryLabel": "Poland"
   },
@@ -23855,22 +23902,22 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2889180",
-    "battleLabel": "Q2889180",
-    "year": "1793",
-    "location": "http://www.wikidata.org/entity/Q631181",
-    "locationLabel": "Machecoul",
-    "locationCoordinates": "Point(-1.821666666 46.993888888)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2888127",
     "battleLabel": "Q2888127",
     "year": "1793",
     "location": "http://www.wikidata.org/entity/Q752918",
     "locationLabel": "Beaupréau",
     "locationCoordinates": "Point(-0.993333333 47.202777777)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2889180",
+    "battleLabel": "Q2889180",
+    "year": "1793",
+    "location": "http://www.wikidata.org/entity/Q631181",
+    "locationLabel": "Machecoul",
+    "locationCoordinates": "Point(-1.821666666 46.993888888)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -25428,22 +25475,22 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2889092",
-    "battleLabel": "Q2889092",
-    "year": "1795",
-    "location": "http://www.wikidata.org/entity/Q1806510",
-    "locationLabel": "Lascahobas",
-    "locationCoordinates": "Point(-71.933333333 18.816666666)",
-    "country": "http://www.wikidata.org/entity/Q790",
-    "countryLabel": "Haiti"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2889596",
     "battleLabel": "Q2889596",
     "year": "1795",
     "location": "http://www.wikidata.org/entity/Q2711253",
     "locationLabel": "Petite Rivière de l'Artibonite",
     "locationCoordinates": "Point(-72.483 19.133)",
+    "country": "http://www.wikidata.org/entity/Q790",
+    "countryLabel": "Haiti"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2889092",
+    "battleLabel": "Q2889092",
+    "year": "1795",
+    "location": "http://www.wikidata.org/entity/Q1806510",
+    "locationLabel": "Lascahobas",
+    "locationCoordinates": "Point(-71.933333333 18.816666666)",
     "country": "http://www.wikidata.org/entity/Q790",
     "countryLabel": "Haiti"
   },
@@ -25788,22 +25835,22 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2889143",
-    "battleLabel": "Q2889143",
-    "year": "1796",
-    "location": "http://www.wikidata.org/entity/Q127163",
-    "locationLabel": "Locminé",
-    "locationCoordinates": "Point(-2.834444444 47.8875)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2890460",
     "battleLabel": "Q2890460",
     "year": "1796",
     "location": "http://www.wikidata.org/entity/Q1101726",
     "locationLabel": "Le Ribay",
     "locationCoordinates": "Point(-0.407777777 48.384166666)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2889143",
+    "battleLabel": "Q2889143",
+    "year": "1796",
+    "location": "http://www.wikidata.org/entity/Q127163",
+    "locationLabel": "Locminé",
+    "locationCoordinates": "Point(-2.834444444 47.8875)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -26821,22 +26868,22 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2889144",
-    "battleLabel": "Q2889144",
-    "year": "1799",
-    "location": "http://www.wikidata.org/entity/Q127163",
-    "locationLabel": "Locminé",
-    "locationCoordinates": "Point(-2.834444444 47.8875)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2889360",
     "battleLabel": "Q2889360",
     "year": "1799",
     "location": "http://www.wikidata.org/entity/Q831401",
     "locationLabel": "Montaigu",
     "locationCoordinates": "Point(-1.308611111 46.973611111)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2889144",
+    "battleLabel": "Q2889144",
+    "year": "1799",
+    "location": "http://www.wikidata.org/entity/Q127163",
+    "locationLabel": "Locminé",
+    "locationCoordinates": "Point(-2.834444444 47.8875)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -26951,22 +26998,22 @@
     "countryLabel": "Germany"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q840006",
-    "battleLabel": "Battle of Stockach",
-    "year": "1800",
-    "location": "http://www.wikidata.org/entity/Q61752",
-    "locationLabel": "Stockach",
-    "locationCoordinates": "Point(9.1 47.51)",
-    "country": "http://www.wikidata.org/entity/Q183",
-    "countryLabel": "Germany"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q982604",
     "battleLabel": "Battle of Engen",
     "year": "1800",
     "location": "http://www.wikidata.org/entity/Q515527",
     "locationLabel": "Engen",
     "locationCoordinates": "Point(8.77139 47.8528)",
+    "country": "http://www.wikidata.org/entity/Q183",
+    "countryLabel": "Germany"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q840006",
+    "battleLabel": "Battle of Stockach",
+    "year": "1800",
+    "location": "http://www.wikidata.org/entity/Q61752",
+    "locationLabel": "Stockach",
+    "locationCoordinates": "Point(9.1 47.51)",
     "country": "http://www.wikidata.org/entity/Q183",
     "countryLabel": "Germany"
   },
@@ -27473,22 +27520,22 @@
     "countryLabel": "Poland"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q945596",
-    "battleLabel": "Battle of Golymin",
-    "year": "1806",
-    "location": "http://www.wikidata.org/entity/Q7883566",
-    "locationLabel": "Gołymin-Ośrodek",
-    "locationCoordinates": "Point(20.866667 52.816667)",
-    "country": "http://www.wikidata.org/entity/Q36",
-    "countryLabel": "Poland"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q1192867",
     "battleLabel": "Battle of Pułtusk",
     "year": "1806",
     "location": "http://www.wikidata.org/entity/Q62937",
     "locationLabel": "Pułtusk",
     "locationCoordinates": "Point(21.075 52.70833333)",
+    "country": "http://www.wikidata.org/entity/Q36",
+    "countryLabel": "Poland"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q945596",
+    "battleLabel": "Battle of Golymin",
+    "year": "1806",
+    "location": "http://www.wikidata.org/entity/Q7883566",
+    "locationLabel": "Gołymin-Ośrodek",
+    "locationCoordinates": "Point(20.866667 52.816667)",
     "country": "http://www.wikidata.org/entity/Q36",
     "countryLabel": "Poland"
   },
@@ -27892,7 +27939,7 @@
     "battleLabel": "Battle of Corunna",
     "year": "1809",
     "location": "http://www.wikidata.org/entity/Q8757",
-    "locationLabel": "A Coruña",
+    "locationLabel": "A Coruña, Juan Darriba",
     "locationCoordinates": "Point(-8.404722222 43.362777777)",
     "country": "http://www.wikidata.org/entity/Q29",
     "countryLabel": "Spain"
@@ -28792,6 +28839,15 @@
     "countryLabel": "Canada"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q9173070",
+    "battleLabel": "Q9173070",
+    "year": "1813",
+    "location": "http://www.wikidata.org/entity/Q9363649",
+    "locationLabel": "Q9363649",
+    "country": "http://www.wikidata.org/entity/Q36",
+    "countryLabel": "Poland"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q592091",
     "battleLabel": "Battle of Salta",
     "year": "1813",
@@ -29195,7 +29251,7 @@
   },
   {
     "battle": "http://www.wikidata.org/entity/Q16541055",
-    "battleLabel": "Q16541055",
+    "battleLabel": "Combat des Balmettes",
     "year": "1814",
     "location": "http://www.wikidata.org/entity/Q845848",
     "locationLabel": "Torcieu",
@@ -30846,21 +30902,21 @@
     "countryLabel": "United States of America"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q2399696",
+    "battleLabel": "Battle of Contreras",
+    "year": "1847",
+    "location": "http://www.wikidata.org/entity/Q1489",
+    "locationLabel": "Mexico City",
+    "country": "http://www.wikidata.org/entity/Q96",
+    "countryLabel": "Mexico"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q2333407",
     "battleLabel": "Battle of Churubusco",
     "year": "1847",
     "location": "http://www.wikidata.org/entity/Q1489",
     "locationLabel": "Mexico City",
     "locationCoordinates": "Point(-99.148611111 19.355555555)",
-    "country": "http://www.wikidata.org/entity/Q96",
-    "countryLabel": "Mexico"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q2399696",
-    "battleLabel": "Battle of Contreras",
-    "year": "1847",
-    "location": "http://www.wikidata.org/entity/Q1489",
-    "locationLabel": "Mexico City",
     "country": "http://www.wikidata.org/entity/Q96",
     "countryLabel": "Mexico"
   },
@@ -31437,15 +31493,6 @@
     "countryLabel": "Argentina"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2888254",
-    "battleLabel": "Battle of Castillejos",
-    "year": "1860",
-    "location": "http://www.wikidata.org/entity/Q513678",
-    "locationLabel": "Fnideq",
-    "country": "http://www.wikidata.org/entity/Q1028",
-    "countryLabel": "Morocco"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2165919",
     "battleLabel": "Battle of Volturnus",
     "year": "1860",
@@ -31454,6 +31501,15 @@
     "locationCoordinates": "Point(14.09444444 41.09194444)",
     "country": "http://www.wikidata.org/entity/Q38",
     "countryLabel": "Italy"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2888254",
+    "battleLabel": "Battle of Castillejos",
+    "year": "1860",
+    "location": "http://www.wikidata.org/entity/Q513678",
+    "locationLabel": "Fnideq",
+    "country": "http://www.wikidata.org/entity/Q1028",
+    "countryLabel": "Morocco"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2888340",
@@ -32176,22 +32232,22 @@
     "countryLabel": "United States of America"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2889251",
-    "battleLabel": "Battle of Marianna",
-    "year": "1864",
-    "location": "http://www.wikidata.org/entity/Q1924806",
-    "locationLabel": "Marianna",
-    "locationCoordinates": "Point(-85.23805556 30.77638889)",
-    "country": "http://www.wikidata.org/entity/Q30",
-    "countryLabel": "United States of America"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q3297425",
     "battleLabel": "Centralia Massacre",
     "year": "1864",
     "location": "http://www.wikidata.org/entity/Q962541",
     "locationLabel": "Centralia",
     "locationCoordinates": "Point(-92.1097 39.1744)",
+    "country": "http://www.wikidata.org/entity/Q30",
+    "countryLabel": "United States of America"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2889251",
+    "battleLabel": "Battle of Marianna",
+    "year": "1864",
+    "location": "http://www.wikidata.org/entity/Q1924806",
+    "locationLabel": "Marianna",
+    "locationCoordinates": "Point(-85.23805556 30.77638889)",
     "country": "http://www.wikidata.org/entity/Q30",
     "countryLabel": "United States of America"
   },
@@ -33024,6 +33080,15 @@
     "countryLabel": "France"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q1529375",
+    "battleLabel": "Battle of Havana",
+    "year": "1870",
+    "location": "http://www.wikidata.org/entity/Q1563",
+    "locationLabel": "Havana",
+    "country": "http://www.wikidata.org/entity/Q241",
+    "countryLabel": "Cuba"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q570919",
     "battleLabel": "Battle of Coulmiers",
     "year": "1870",
@@ -33032,15 +33097,6 @@
     "locationCoordinates": "Point(1.66444 47.9322)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q1529375",
-    "battleLabel": "Battle of Havana",
-    "year": "1870",
-    "location": "http://www.wikidata.org/entity/Q1563",
-    "locationLabel": "Havana",
-    "country": "http://www.wikidata.org/entity/Q241",
-    "countryLabel": "Cuba"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q661418",
@@ -33092,22 +33148,22 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q155302",
-    "battleLabel": "Battle of Loigny-Poupry",
-    "year": "1870",
-    "location": "http://www.wikidata.org/entity/Q1075525",
-    "locationLabel": "Loigny-la-Bataille",
-    "locationCoordinates": "Point(1.73389 48.1239)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q188123",
     "battleLabel": "Battle of Villiers",
     "year": "1870",
     "location": "http://www.wikidata.org/entity/Q258636",
     "locationLabel": "Villiers-sur-Marne",
     "locationCoordinates": "Point(2.51556 48.8172)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q155302",
+    "battleLabel": "Battle of Loigny-Poupry",
+    "year": "1870",
+    "location": "http://www.wikidata.org/entity/Q1075525",
+    "locationLabel": "Loigny-la-Bataille",
+    "locationCoordinates": "Point(1.73389 48.1239)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -34268,24 +34324,14 @@
     "countryLabel": "Greece"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1327145",
-    "battleLabel": "Battle of Basra",
+    "battle": "http://www.wikidata.org/entity/Q786656",
+    "battleLabel": "Battle of Albert",
     "year": "1914",
-    "location": "http://www.wikidata.org/entity/Q48195",
-    "locationLabel": "Basra",
-    "locationCoordinates": "Point(48.0167 30.4167)",
-    "country": "http://www.wikidata.org/entity/Q796",
-    "countryLabel": "Iraq"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q426099",
-    "battleLabel": "Siege of Antwerp",
-    "year": "1914",
-    "location": "http://www.wikidata.org/entity/Q12892",
-    "locationLabel": "Antwerp",
-    "locationCoordinates": "Point(4.4 51.2167)",
-    "country": "http://www.wikidata.org/entity/Q31",
-    "countryLabel": "Belgium"
+    "location": "http://www.wikidata.org/entity/Q12770",
+    "locationLabel": "Somme",
+    "locationCoordinates": "Point(2.69 50.01)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q989075",
@@ -34296,6 +34342,16 @@
     "locationCoordinates": "Point(2.78083 50.2897)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q426099",
+    "battleLabel": "Siege of Antwerp",
+    "year": "1914",
+    "location": "http://www.wikidata.org/entity/Q12892",
+    "locationLabel": "Antwerp",
+    "locationCoordinates": "Point(4.4 51.2167)",
+    "country": "http://www.wikidata.org/entity/Q31",
+    "countryLabel": "Belgium"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q1539453",
@@ -34317,14 +34373,14 @@
     "countryLabel": "Poland"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q786656",
-    "battleLabel": "Battle of Albert",
+    "battle": "http://www.wikidata.org/entity/Q1327145",
+    "battleLabel": "Battle of Basra",
     "year": "1914",
-    "location": "http://www.wikidata.org/entity/Q12770",
-    "locationLabel": "Somme",
-    "locationCoordinates": "Point(2.69 50.01)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
+    "location": "http://www.wikidata.org/entity/Q48195",
+    "locationLabel": "Basra",
+    "locationCoordinates": "Point(48.0167 30.4167)",
+    "country": "http://www.wikidata.org/entity/Q796",
+    "countryLabel": "Iraq"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q1497933",
@@ -34332,7 +34388,7 @@
     "year": "1914",
     "location": "http://www.wikidata.org/entity/Q461436",
     "locationLabel": "Halen",
-    "locationCoordinates": "Point(5.1 50.9333)",
+    "locationCoordinates": "Point(5.110555555 50.949166666)",
     "country": "http://www.wikidata.org/entity/Q31",
     "countryLabel": "Belgium"
   },
@@ -34534,6 +34590,15 @@
     "countryLabel": "France"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q1582511",
+    "battleLabel": "Battle of Ctesiphon",
+    "year": "1915",
+    "location": "http://www.wikidata.org/entity/Q192541",
+    "locationLabel": "Ctesiphon",
+    "country": "http://www.wikidata.org/entity/Q796",
+    "countryLabel": "Iraq"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q1361898",
     "battleLabel": "Q1361898",
     "year": "1915",
@@ -34542,15 +34607,6 @@
     "locationCoordinates": "Point(12.01138889 46.525)",
     "country": "http://www.wikidata.org/entity/Q38",
     "countryLabel": "Italy"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q1582511",
-    "battleLabel": "Battle of Ctesiphon",
-    "year": "1915",
-    "location": "http://www.wikidata.org/entity/Q192541",
-    "locationLabel": "Ctesiphon",
-    "country": "http://www.wikidata.org/entity/Q796",
-    "countryLabel": "Iraq"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2467678",
@@ -34701,21 +34757,21 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q3381142",
-    "battleLabel": "Q3381142",
-    "year": "1916",
-    "location": "http://www.wikidata.org/entity/Q61778",
-    "locationLabel": "Courcelette",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q1992231",
     "battleLabel": "Battle of Albert",
     "year": "1916",
     "location": "http://www.wikidata.org/entity/Q12770",
     "locationLabel": "Somme",
     "locationCoordinates": "Point(2.712 49.993)",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q3381142",
+    "battleLabel": "Q3381142",
+    "year": "1916",
+    "location": "http://www.wikidata.org/entity/Q61778",
+    "locationLabel": "Courcelette",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -34813,6 +34869,15 @@
     "countryLabel": "Belgium"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q3636594",
+    "battleLabel": "Battle of Ramadi",
+    "year": "1917",
+    "location": "http://www.wikidata.org/entity/Q192961",
+    "locationLabel": "Ramadi",
+    "country": "http://www.wikidata.org/entity/Q796",
+    "countryLabel": "Iraq"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q654374",
     "battleLabel": "Battle of Cambrai",
     "year": "1917",
@@ -34821,15 +34886,6 @@
     "locationCoordinates": "Point(3.23556 50.1767)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q3636594",
-    "battleLabel": "Battle of Ramadi",
-    "year": "1917",
-    "location": "http://www.wikidata.org/entity/Q192961",
-    "locationLabel": "Ramadi",
-    "country": "http://www.wikidata.org/entity/Q796",
-    "countryLabel": "Iraq"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2665637",
@@ -34958,6 +35014,15 @@
     "countryLabel": "Israel"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q1063735",
+    "battleLabel": "Second Battle of the Somme",
+    "year": "1918",
+    "location": "http://www.wikidata.org/entity/Q37646",
+    "locationLabel": "River Somme",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q911448",
     "battleLabel": "Battle of Amiens",
     "year": "1918",
@@ -34968,11 +35033,22 @@
     "countryLabel": "France"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q1063735",
-    "battleLabel": "Second Battle of the Somme",
+    "battle": "http://www.wikidata.org/entity/Q1612074",
+    "battleLabel": "Q1612074",
     "year": "1918",
-    "location": "http://www.wikidata.org/entity/Q37646",
-    "locationLabel": "River Somme",
+    "location": "http://www.wikidata.org/entity/Q944457",
+    "locationLabel": "Tonale Pass",
+    "locationCoordinates": "Point(10.59374444 46.26143056)",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "countryLabel": "Italy"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2585904",
+    "battleLabel": "Battle of Cambrai",
+    "year": "1918",
+    "location": "http://www.wikidata.org/entity/Q181285",
+    "locationLabel": "Cambrai",
+    "locationCoordinates": "Point(3.23556 50.1767)",
     "country": "http://www.wikidata.org/entity/Q142",
     "countryLabel": "France"
   },
@@ -34995,26 +35071,6 @@
     "locationCoordinates": "Point(2.9 50.70555556)",
     "country": "http://www.wikidata.org/entity/Q31",
     "countryLabel": "Belgium"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q1612074",
-    "battleLabel": "Q1612074",
-    "year": "1918",
-    "location": "http://www.wikidata.org/entity/Q944457",
-    "locationLabel": "Tonale Pass",
-    "locationCoordinates": "Point(10.59374444 46.26143056)",
-    "country": "http://www.wikidata.org/entity/Q38",
-    "countryLabel": "Italy"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q2585904",
-    "battleLabel": "Battle of Cambrai",
-    "year": "1918",
-    "location": "http://www.wikidata.org/entity/Q181285",
-    "locationLabel": "Cambrai",
-    "locationCoordinates": "Point(3.23556 50.1767)",
-    "country": "http://www.wikidata.org/entity/Q142",
-    "countryLabel": "France"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q644021",
@@ -35292,16 +35348,6 @@
     "countryLabel": "Ukraine"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2600516",
-    "battleLabel": "Kiev Offensive",
-    "year": "1920",
-    "location": "http://www.wikidata.org/entity/Q212",
-    "locationLabel": "Ukraine",
-    "locationCoordinates": "Point(30.5167 50.45)",
-    "country": "http://www.wikidata.org/entity/Q212",
-    "countryLabel": "Ukraine"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q821283",
     "battleLabel": "Battle of Warsaw",
     "year": "1920",
@@ -35310,6 +35356,16 @@
     "locationCoordinates": "Point(20.8167 52.3)",
     "country": "http://www.wikidata.org/entity/Q36",
     "countryLabel": "Poland"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2600516",
+    "battleLabel": "Kiev Offensive",
+    "year": "1920",
+    "location": "http://www.wikidata.org/entity/Q212",
+    "locationLabel": "Ukraine",
+    "locationCoordinates": "Point(30.5167 50.45)",
+    "country": "http://www.wikidata.org/entity/Q212",
+    "countryLabel": "Ukraine"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q4271054",
@@ -35600,6 +35656,15 @@
     "countryLabel": "Spain"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q6819231",
+    "battleLabel": "Merida pocket",
+    "year": "1938",
+    "location": "http://www.wikidata.org/entity/Q2472448",
+    "locationLabel": "La Serena",
+    "country": "http://www.wikidata.org/entity/Q29",
+    "countryLabel": "Spain"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q2038907",
     "battleLabel": "Battle of Wuhan",
     "year": "1938",
@@ -35608,6 +35673,15 @@
     "locationCoordinates": "Point(114.267 30.5667)",
     "country": "http://www.wikidata.org/entity/Q148",
     "countryLabel": "People's Republic of China"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q3636512",
+    "battleLabel": "Battle of Lwów",
+    "year": "1939",
+    "location": "http://www.wikidata.org/entity/Q36036",
+    "locationLabel": "Lviv",
+    "country": "http://www.wikidata.org/entity/Q212",
+    "countryLabel": "Ukraine"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q2981215",
@@ -35628,6 +35702,15 @@
     "locationCoordinates": "Point(112.967 28.2)",
     "country": "http://www.wikidata.org/entity/Q148",
     "countryLabel": "People's Republic of China"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q24948781",
+    "battleLabel": "Q24948781",
+    "year": "1939",
+    "location": "http://www.wikidata.org/entity/Q102350",
+    "locationLabel": "Bytom",
+    "country": "http://www.wikidata.org/entity/Q36",
+    "countryLabel": "Poland"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q8250658",
@@ -35679,6 +35762,16 @@
     "countryLabel": "People's Republic of China"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q754923",
+    "battleLabel": "Battle of Chojnice",
+    "year": "1939",
+    "location": "http://www.wikidata.org/entity/Q740241",
+    "locationLabel": "Chojnice",
+    "locationCoordinates": "Point(17.5667 53.7)",
+    "country": "http://www.wikidata.org/entity/Q36",
+    "countryLabel": "Poland"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q469416",
     "battleLabel": "Charge at Krojanty",
     "year": "1939",
@@ -35706,12 +35799,11 @@
     "countryLabel": "Poland"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q754923",
-    "battleLabel": "Battle of Chojnice",
+    "battle": "http://www.wikidata.org/entity/Q4366849",
+    "battleLabel": "Battle of the Border",
     "year": "1939",
-    "location": "http://www.wikidata.org/entity/Q740241",
-    "locationLabel": "Chojnice",
-    "locationCoordinates": "Point(17.5667 53.7)",
+    "location": "http://www.wikidata.org/entity/Q36",
+    "locationLabel": "Poland",
     "country": "http://www.wikidata.org/entity/Q36",
     "countryLabel": "Poland"
   },
@@ -35722,15 +35814,6 @@
     "location": "http://www.wikidata.org/entity/Q769361",
     "locationLabel": "Mokra, Silesian Voivodeship",
     "locationCoordinates": "Point(18.9167 50.9667)",
-    "country": "http://www.wikidata.org/entity/Q36",
-    "countryLabel": "Poland"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q4366849",
-    "battleLabel": "Battle of the Border",
-    "year": "1939",
-    "location": "http://www.wikidata.org/entity/Q36",
-    "locationLabel": "Poland",
     "country": "http://www.wikidata.org/entity/Q36",
     "countryLabel": "Poland"
   },
@@ -36199,6 +36282,15 @@
     "countryLabel": "France"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q3636226",
+    "battleLabel": "Q3636226",
+    "year": "1942",
+    "location": "http://www.wikidata.org/entity/Q183557",
+    "locationLabel": "Dieppe",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "countryLabel": "France"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q4872084",
     "battleLabel": "Battle of Port Lyautey",
     "year": "1942",
@@ -36530,6 +36622,15 @@
     "countryLabel": "Philippines"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q11223163",
+    "battleLabel": "Q11223163",
+    "year": "1945",
+    "location": "http://www.wikidata.org/entity/Q321778",
+    "locationLabel": "Hodonín",
+    "country": "http://www.wikidata.org/entity/Q213",
+    "countryLabel": "Czech Republic"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q2748375",
     "battleLabel": "Black Friday",
     "year": "1945",
@@ -36814,6 +36915,15 @@
     "locationLabel": "Persian Gulf"
   },
   {
+    "battle": "http://www.wikidata.org/entity/Q4870995",
+    "battleLabel": "Battle of Failaka",
+    "year": "1990",
+    "location": "http://www.wikidata.org/entity/Q817",
+    "locationLabel": "Kuwait",
+    "country": "http://www.wikidata.org/entity/Q817",
+    "countryLabel": "Kuwait"
+  },
+  {
     "battle": "http://www.wikidata.org/entity/Q4872876",
     "battleLabel": "Battle of the Bridges",
     "year": "1990",
@@ -36834,13 +36944,14 @@
     "countryLabel": "Kuwait"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q4870995",
-    "battleLabel": "Battle of Failaka",
-    "year": "1990",
-    "location": "http://www.wikidata.org/entity/Q817",
-    "locationLabel": "Kuwait",
-    "country": "http://www.wikidata.org/entity/Q817",
-    "countryLabel": "Kuwait"
+    "battle": "http://www.wikidata.org/entity/Q1634629",
+    "battleLabel": "Battle of Medina Ridge",
+    "year": "1991",
+    "location": "http://www.wikidata.org/entity/Q48195",
+    "locationLabel": "Basra",
+    "locationCoordinates": "Point(46.935 30.17416667)",
+    "country": "http://www.wikidata.org/entity/Q796",
+    "countryLabel": "Iraq"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q3636553",
@@ -36848,16 +36959,6 @@
     "year": "1991",
     "location": "http://www.wikidata.org/entity/Q212761",
     "locationLabel": "Al Muthanna Governorate",
-    "country": "http://www.wikidata.org/entity/Q796",
-    "countryLabel": "Iraq"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q1634629",
-    "battleLabel": "Battle of Medina Ridge",
-    "year": "1991",
-    "location": "http://www.wikidata.org/entity/Q48195",
-    "locationLabel": "Basra",
-    "locationCoordinates": "Point(46.935 30.17416667)",
     "country": "http://www.wikidata.org/entity/Q796",
     "countryLabel": "Iraq"
   },
@@ -36920,15 +37021,6 @@
     "countryLabel": "United Kingdom"
   },
   {
-    "battle": "http://www.wikidata.org/entity/Q2838704",
-    "battleLabel": "Battle of Ocosingo",
-    "year": "1994",
-    "location": "http://www.wikidata.org/entity/Q53556",
-    "locationLabel": "Ocosingo Municipality",
-    "country": "http://www.wikidata.org/entity/Q96",
-    "countryLabel": "Mexico"
-  },
-  {
     "battle": "http://www.wikidata.org/entity/Q2026919",
     "battleLabel": "Battle of Grozny",
     "year": "1994",
@@ -36945,6 +37037,15 @@
     "locationLabel": "Grozny",
     "country": "http://www.wikidata.org/entity/Q15180",
     "countryLabel": "Soviet Union"
+  },
+  {
+    "battle": "http://www.wikidata.org/entity/Q2838704",
+    "battleLabel": "Battle of Ocosingo",
+    "year": "1994",
+    "location": "http://www.wikidata.org/entity/Q53556",
+    "locationLabel": "Ocosingo Municipality",
+    "country": "http://www.wikidata.org/entity/Q96",
+    "countryLabel": "Mexico"
   },
   {
     "battle": "http://www.wikidata.org/entity/Q568992",
@@ -37416,23 +37517,5 @@
     "locationCoordinates": "Point(0.367795277 14.754379444)",
     "country": "http://www.wikidata.org/entity/Q1032",
     "countryLabel": "Niger"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q51913480",
-    "battleLabel": "Siege of Paneas",
-    "year": "11157",
-    "location": "http://www.wikidata.org/entity/Q606295",
-    "locationLabel": "Banias",
-    "country": "http://www.wikidata.org/entity/Q801",
-    "countryLabel": "Israel"
-  },
-  {
-    "battle": "http://www.wikidata.org/entity/Q51913480",
-    "battleLabel": "Siege of Paneas",
-    "year": "11157",
-    "location": "http://www.wikidata.org/entity/Q606295",
-    "locationLabel": "Banias",
-    "country": "http://www.wikidata.org/entity/Q858",
-    "countryLabel": "Syria"
   }
 ]
