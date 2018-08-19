@@ -13,4 +13,4 @@ app.get('/data', (req, res) => {
   res.send(fs.readFileSync('./db/db.json'));
 });
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'));
+app.listen(3100, () => console.log('Example app listening on port 3100!'));
