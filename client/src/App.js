@@ -1,45 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import * as echarts from 'echarts';
+import * as axios from 'axios';
 
 class App extends Component {
 
   myChart = undefined;
 
-  componentDidMount() {
-    console.log('wa');
+  async componentDidMount() {
+    let battles = (await axios.get('http://localhost:3100/data')).data;
+
     this.myChart = echarts.init(document.getElementById('chartingArea'));
     this.myChart.setOption({
       title: {
           text: 'ECharts entry example'
       },
       tooltip: {},
-      xAxis: {
-          data: ['shirt', 'cardign', 'chiffon shirt', 'pants', 'heels', 'socks']
+      dataset: {
+        source: battles
       },
-      yAxis: {},
-      series: [{
-          name: 'sales',
-          type: 'bar',
-          data: [5, 20, 36, 10, 10, 20]
-      }]
+      xAxis: {
+        data: battles.map(b => b.year)
+      },
+      yAxis: {
+        type: 'category',
+        data: battles.map(b => b.locationLabel)
+      },
+      series: [
+        {
+          type: 'scatter',
+          dimensions: ['battleLabel', 'year', 'locationLabel'],
+          encode: {
+            x: 'year',
+            y: 'locationLabel'
+          }
+        }
+      ]
     });
-    console.log('w5a');
   }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>        
-        <div id="chartingArea" style={{height: 400}}></div>
-      </div>
+      <div id="chartingArea" style={{height: 700}}></div>
     );
   }
 }
