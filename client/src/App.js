@@ -15,7 +15,6 @@ class App extends Component {
       title: {
           text: 'ECharts entry example'
       },
-      tooltip: {},
       dataset: {
         source: battles
       },
@@ -29,13 +28,17 @@ class App extends Component {
       series: [
         {
           type: 'scatter',
-          dimensions: ['battleLabel', 'year', 'locationLabel'],
           encode: {
             x: 'year',
             y: 'locationLabel'
           }
         }
-      ]
+      ],
+      tooltip: {
+        formatter: function (params) {
+          return `${params.data.year} - ${params.data.battleLabel} - ${params.data.locationLabel}`;
+        }
+      }
     });
   }
 
