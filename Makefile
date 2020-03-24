@@ -1,11 +1,28 @@
 CURRENT_DIR = $(shell pwd)
 
-build_for_dev:
-	docker build -t carta-historia-dev -f dev.Dockerfile .
+.PHONY: build_dockerfile
+build_dockerfile:
+	docker build -t carta-historia -f Dockerfile .
 
-start: build_for_dev
-	docker run --name carta-historia-dev -ti -p 3100:3100 --rm \
+.PHONY: start
+start: build_dockerfile
+	docker run -ti --rm --name carta-historia \
 		-v $(CURRENT_DIR):/workspace \
-		carta-historia-dev
+		-p 3000:3000 \
+		carta-historia \
+		start
 
-.PHONY: build_for_dev start
+.PHONY: install_client
+install_client: build_dockerfile
+	docker run -ti --rm --name carta-historia \
+		-v $(CURRENT_DIR):/workspace \
+		carta-historia \
+		install
+
+.PHONY: build_client
+build_client: build_dockerfile
+	docker run -ti --rm --name carta-historia \
+		-v $(CURRENT_DIR):/workspace \
+		--entrypoint yarn \
+		carta-historia \
+		build
