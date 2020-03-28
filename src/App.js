@@ -12,17 +12,27 @@ class App extends React.Component {
   }
   async loadData() {
     let response = await fetch(`${window.location.origin}/db.csv`);
-    return this.getArrayFromCsv(await response.text());
+    return this.createDatasetFromCsv(await response.text());
   }
-  getArrayFromCsv(items) {
-    return items.split('\n').map(function (item) {
+  createDatasetFromCsv(input) {
+    let rows = input.split('\n').map(function (item) {
       return item.split(',');
     });
+    let result = {
+      headers: [],
+      items: []
+    };
+    if (rows.length < 1) return result;
+    rows.pop();
+    result.headers = rows.shift();
+    result.items = rows;
+    return result;
   }
   async componentDidMount() {
     this.echartsInstance = echarts.init(document.getElementById('echarts_container'));
 
-    let items = await this.loadData();
+    let dataset = await this.loadData();
+    console.log(dataset);
     var option = {
       backgroundColor: '#000',
       title: {
@@ -52,16 +62,8 @@ class App extends React.Component {
         }
       },
       dataset: {
-        dimensions: [
-          "battle",
-          "battleLabel",
-          "year",
-          "location",
-          "locationLabel",
-          "locationCoordinates",
-          "country",
-          "countryLabel",
-        ]
+        dimensions: dataset.headers,
+        source: dataset.items
       },
       // series: [
       //   {
