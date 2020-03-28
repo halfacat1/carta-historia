@@ -11,56 +11,58 @@ class App extends React.Component {
     this.state = {};
   }
   async loadData() {
-    let result = await fetch(`${window.location.origin}/db.json`);
-    return result.json();
+    let response = await fetch(`${window.location.origin}/db.csv`);
+    return this.getArrayFromCsv(await response.text());
+  }
+  getArrayFromCsv(items) {
+    return items.split('\n').map(function (item) {
+      return item.split(',');
+    });
   }
   async componentDidMount() {
     this.echartsInstance = echarts.init(document.getElementById('echarts_container'));
-    this.setState({
-      echarts: 'naooooo'
-    });
-    
+
     let items = await this.loadData();
     var option = {
       backgroundColor: '#000',
       title: {
-          text: 'title 000',
-              left: 'center',
-          textStyle: {
-              color: '#fff'
-          }
+        text: 'title 000',
+        left: 'center',
+        textStyle: {
+          color: '#fff'
+        }
       },
       geo: {
-          map: 'world',
-          roam: true,
-          label: {
-              emphasis: {
-                  show: false
-              }
-          },
-          silent: true,
-          itemStyle: {
-              normal: {
-                  areaColor: '#323c48',
-                  borderColor: '#111'
-              },
-              emphasis: {
-                  areaColor: '#2a333d'
-              }
+        map: 'world',
+        roam: true,
+        label: {
+          emphasis: {
+            show: false
           }
+        },
+        silent: true,
+        itemStyle: {
+          normal: {
+            areaColor: '#323c48',
+            borderColor: '#111'
+          },
+          emphasis: {
+            areaColor: '#2a333d'
+          }
+        }
       },
-      // dataset: {
-      //   dimensions: [
-      //     "battle",
-      //     "battleLabel",
-      //     "year",
-      //     "location",
-      //     "locationLabel",
-      //     "locationCoordinates",
-      //     "country",
-      //     "countryLabel",
-      //   ]
-      // },
+      dataset: {
+        dimensions: [
+          "battle",
+          "battleLabel",
+          "year",
+          "location",
+          "locationLabel",
+          "locationCoordinates",
+          "country",
+          "countryLabel",
+        ]
+      },
       // series: [
       //   {
       //     name: 'wat',
@@ -83,7 +85,7 @@ class App extends React.Component {
       //   }
       // ]
     };
-    
+
     this.echartsInstance.setOption(option, true);
   }
   render() {
@@ -100,7 +102,7 @@ class App extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-          Learn React: {this.state.echarts}
+            Learn React: {this.state.echarts}
           </a>
         </header>
         <div id="echarts_container" className="Chart"></div>
