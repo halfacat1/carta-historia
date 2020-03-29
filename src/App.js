@@ -37,7 +37,7 @@ class App extends React.Component {
     return result;
   }
   addGeoToDataset(dataset) {
-    let regex = /Point\(([0-9]+[.]?[0-9]*) ([0-9]+[.]?[0-9]*)\)/
+    let regex = /Point\((-?[0-9]+[.]?[0-9]*) (-?[0-9]+[.]?[0-9]*)\)/;
     dataset.headers = dataset.headers.concat(['lat', 'lng']);
     dataset.items.forEach(item => {
       let captures = regex.exec(item['locationCoordinates']);
@@ -52,7 +52,16 @@ class App extends React.Component {
 
     let dataset = await this.loadData();
     this.addGeoToDataset(dataset);
-    console.log(dataset);
+
+    // Test code
+    // let southDeerfield = null;
+    // dataset.items.forEach(item => {
+    //   if (item['battle'] === 'http://www.wikidata.org/entity/Q885253') {
+    //     southDeerfield = item;
+    //   }
+    // });
+    // console.log(dataset);
+
     var option = {
       backgroundColor: '#000',
       title: {
@@ -91,18 +100,28 @@ class App extends React.Component {
           type: 'scatterGL',
           progressive: 1e6,
           coordinateSystem: 'geo',
-          symbolSize: 1,
+          symbolSize: 2,
           zoomScale: 0.002,
           blendMode: 'lighter',
-          large: true,
-          itemStyle: {
-            color: 'rgb(20, 15, 2)'
-          },
           postEffect: {
             enable: true
           },
-          silent: true,
-          dimensions: ['lng', 'lat']
+        }
+      ],
+      visualMap: [
+        {
+          seriesIndex: 0,
+          dimension: 'year',
+          type: 'piecewise',
+          splitNumber: 10,
+          min: -3000,
+          max: 2000,
+          inRange: {
+            color: ['#94b9af', '#90a583', '#9d8420', '#942911', '#593837']
+          },
+          outOfRange: {
+            color: ['#000000']
+          }
         }
       ]
     };
