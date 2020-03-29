@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import echarts from 'echarts';
 import 'echarts-gl';
@@ -64,13 +63,6 @@ class App extends React.Component {
 
     var option = {
       backgroundColor: '#000',
-      title: {
-        text: 'title 000',
-        left: 'center',
-        textStyle: {
-          color: '#fff'
-        }
-      },
       geo: {
         map: 'world',
         roam: true,
@@ -127,23 +119,16 @@ class App extends React.Component {
     };
 
     this.echartsInstance.setOption(option, true);
+    let self = this;
+    window.onresize = function() {
+      self.echartsInstance.resize();
+    };
   }
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React: {this.state.echarts}
-          </a>
+          <h3>Carta Historia</h3>
         </header>
         <div id="echarts_container" className="Chart"></div>
       </div>
