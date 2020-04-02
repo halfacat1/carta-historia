@@ -75,6 +75,7 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
+    let self = this;
     this.echartsInstance = echarts.init(document.getElementById('echarts_container'));
 
     let dataset = await this.loadData();
@@ -89,6 +90,20 @@ class App extends React.Component {
     //   }
     // });
     // console.log(dataset);
+
+    this.echartsInstance.on('dataZoom', function (event) {
+      let dataZoom = self.echartsInstance.getOption().dataZoom[0];
+      self.echartsInstance.setOption({
+        visualMap: {
+          id: 'battles-geo-scatter',
+          min: Math.round(dataZoom.startValue, 0),
+          max: Math.round(dataZoom.endValue, 0),
+          textStyle: {
+            color: '#fff'
+          },
+        }
+      });
+    });
 
     var option = {
       backgroundColor: '#000',
@@ -151,7 +166,7 @@ class App extends React.Component {
       },
       series: [
         {
-          name: 'battles-geo-scatter',
+          id: 'battles-geo-scatter',
           type: 'scatterGL',
           progressive: 1e6,
           coordinateSystem: 'geo',
@@ -164,13 +179,13 @@ class App extends React.Component {
           zlevel: 101
         },
         {
-          name: 'battles-time-line',
+          id: 'battles-time-line',
           type: 'line',
           xAxisIndex: 0,
           yAxisIndex: 0,
           data: this.groupCountByYear(dataset.items),
           lineStyle: {
-            color: '#000'
+            color: '#974716'
           },
           itemStyle: {
             color: '#fff',
@@ -181,6 +196,7 @@ class App extends React.Component {
       ],
       dataZoom: [
         {
+          id: 'battles-time-line',
           type: 'slider',
           show: true,
           xAxisIndex: [0],
@@ -191,12 +207,13 @@ class App extends React.Component {
       ],
       visualMap: [
         {
+          id: 'battles-geo-scatter',
           seriesIndex: 0,
           dimension: 'year',
           type: 'piecewise',
           splitNumber: 10,
           min: -3000,
-          max: 2000,
+          max: 3000,
           inRange: {
             color: ['#94b9af', '#90a583', '#9d8420', '#942911', '#593837']
           },
@@ -214,7 +231,6 @@ class App extends React.Component {
 
     this.echartsInstance.setOption(option, true);
 
-    let self = this;
     window.onresize = function () {
       self.echartsInstance.resize();
     };
