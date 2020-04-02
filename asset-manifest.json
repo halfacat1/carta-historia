@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/carta-historia/static/css/main.d5161ecd.chunk.css",
+    "main.js": "/carta-historia/static/js/main.b2fa11b3.chunk.js",
+    "main.js.map": "/carta-historia/static/js/main.b2fa11b3.chunk.js.map",
+    "runtime-main.js": "/carta-historia/static/js/runtime-main.a19d14c3.js",
+    "runtime-main.js.map": "/carta-historia/static/js/runtime-main.a19d14c3.js.map",
+    "static/js/2.96be40cb.chunk.js": "/carta-historia/static/js/2.96be40cb.chunk.js",
+    "static/js/2.96be40cb.chunk.js.map": "/carta-historia/static/js/2.96be40cb.chunk.js.map",
+    "index.html": "/carta-historia/index.html",
+    "precache-manifest.7df6212c076f4a3f27cc50a9ce68bf4d.js": "/carta-historia/precache-manifest.7df6212c076f4a3f27cc50a9ce68bf4d.js",
+    "service-worker.js": "/carta-historia/service-worker.js",
+    "static/css/main.d5161ecd.chunk.css.map": "/carta-historia/static/css/main.d5161ecd.chunk.css.map",
+    "static/js/2.96be40cb.chunk.js.LICENSE.txt": "/carta-historia/static/js/2.96be40cb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a19d14c3.js",
+    "static/js/2.96be40cb.chunk.js",
+    "static/css/main.d5161ecd.chunk.css",
+    "static/js/main.b2fa11b3.chunk.js"
+  ]
+}
