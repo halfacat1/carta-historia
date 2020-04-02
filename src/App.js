@@ -35,6 +35,17 @@ class App extends React.Component {
     result.items = items;
     return result;
   }
+  cleanYearInDataset(dataset) {
+    let results = dataset.items.reduce(function (accumulator, current) {
+      let year = parseInt(current.year);
+      if (!isNaN(year)) {
+        current.year = year;
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
+    dataset.items = results;
+  }
   addGeoToDataset(dataset) {
     let regex = /Point\((-?[0-9]+[.]?[0-9]*) (-?[0-9]+[.]?[0-9]*)\)/;
     dataset.headers = dataset.headers.concat(['lat', 'lng']);
@@ -46,10 +57,28 @@ class App extends React.Component {
       }
     });
   }
+  groupCountByYear(items) {
+    let results = items.reduce(function (accumulator, current) {
+      let currentPropValue = current['year'];
+      if (!(currentPropValue in accumulator)) {
+        accumulator[currentPropValue] = 0;
+      }
+      accumulator[currentPropValue]++;
+      return accumulator;
+    }, {});
+    let tuples = Object.entries(results).map(function (pair) {
+      pair[0] = parseInt(pair);
+      return pair;
+    });
+    tuples.sort((a, b) => a[0] > b[0] ? 1 : -1);
+    return tuples;
+  }
+
   async componentDidMount() {
     this.echartsInstance = echarts.init(document.getElementById('echarts_container'));
 
     let dataset = await this.loadData();
+    this.cleanYearInDataset(dataset);
     this.addGeoToDataset(dataset);
 
     // Test code
@@ -80,15 +109,49 @@ class App extends React.Component {
           emphasis: {
             areaColor: '#2a333d'
           }
-        }
+        },
+        bottom: '30%',
+        zlevel: 100,
+        zoom: 3
       },
+      grid: [
+        {
+          id: 'battles-time-line',
+          top: '70%',
+          show: true,
+          backgroundColor: '#2F394D',
+          zlevel: 200
+        }
+      ],
       dataset: {
         dimensions: dataset.headers,
         source: dataset.items
       },
+      xAxis: {
+        id: 'battles-time-line-x',
+        gridId: 'battles-time-line',
+        type: 'value',
+        axisLabel: {
+          textStyle: {
+            color: '#fff'
+          }
+        },
+        zlevel: 201
+      },
+      yAxis: {
+        id: 'battles-time-line-y',
+        gridId: 'battles-time-line',
+        type: 'value',
+        axisLabel: {
+          textStyle: {
+            color: '#fff'
+          }
+        },
+        zlevel: 201,
+      },
       series: [
         {
-          name: 'battles',
+          name: 'battles-geo-scatter',
           type: 'scatterGL',
           progressive: 1e6,
           coordinateSystem: 'geo',
@@ -98,7 +161,33 @@ class App extends React.Component {
           postEffect: {
             enable: true
           },
+          zlevel: 101
+        },
+        {
+          name: 'battles-time-line',
+          type: 'line',
+          xAxisIndex: 0,
+          yAxisIndex: 0,
+          data: this.groupCountByYear(dataset.items),
+          lineStyle: {
+            color: '#000'
+          },
+          itemStyle: {
+            color: '#fff',
+            borderColor: '#fff'
+          },
+          zlevel: 201,
         }
+      ],
+      dataZoom: [
+        {
+          type: 'slider',
+          show: true,
+          xAxisIndex: [0],
+          start: 40,
+          end: 55,
+          zlevel: 201
+        },
       ],
       visualMap: [
         {
@@ -113,23 +202,26 @@ class App extends React.Component {
           },
           outOfRange: {
             color: ['#000000']
-          }
+          },
+          textStyle: {
+            color: '#fff'
+          },
+          bottom: '30%',
+          zlevel: 110
         }
       ]
     };
 
     this.echartsInstance.setOption(option, true);
+
     let self = this;
-    window.onresize = function() {
+    window.onresize = function () {
       self.echartsInstance.resize();
     };
   }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h3>Carta Historia</h3>
-        </header>
         <div id="echarts_container" className="Chart"></div>
       </div>
     );
