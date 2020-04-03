@@ -11,6 +11,7 @@ class App extends React.Component {
     this.state = {};
   }
   async loadData() {
+    console.log(window.location.href);
     let response = await fetch(`${window.location.origin}/db.csv`);
     return this.createDatasetFromCsv(await response.text());
   }
