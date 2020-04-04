@@ -14,13 +14,26 @@ function renderTooltip(props) {
 
 const HelpOverlay = () => (
   <div className="HelpOverlay">
-    <OverlayTrigger
-      placement="left"
-      delay={{ show: 250, hide: 400 }}
-      overlay={renderTooltip}
-    >
-      <Button className="TriggerButton" variant="success">Hover me to see</Button>
-    </OverlayTrigger>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs HelpOverlayContainer">
+          <div className="HelpOverlayButton">
+            <OverlayTrigger
+              placement="left"
+              delay={{ show: 250, hide: 400 }}
+              overlay={renderTooltip}
+              trigger="click"
+            >
+              <Button variant="outline-light">💡</Button>
+            </OverlayTrigger>
+          </div>
+        </div>
+        <div class="col-xs HelpOverlayContainer">
+          <Button variant="outline-light" href="https://github.com/halfacat1/carta-historia/" target="_blank" rel="noopener noreferrer">👋</Button>
+        </div>
+      </div>
+    </div>
+
   </div>
 );
 
