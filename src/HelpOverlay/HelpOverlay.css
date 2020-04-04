@@ -1,0 +1,7 @@
+.HelpOverlay {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    text-align: right;
+    z-index: 10;
+}

@@ -1,4 +1,5 @@
 .ChartArea {
   background-color: #000000;
+  position: relative;
   height: 100vh;
 }
