@@ -11,5 +11,24 @@
     text-align: right;
 }
 
+/* TODO find better way to override tooltip colors */
 .bs-tooltip-left .arrow::before {border-left-color: rgba(67, 70, 83, 0.8) !important;}
+.bs-tooltip-bottom .arrow::before {border-bottom-color: rgba(67, 70, 83, 0.8) !important;}
 .tooltip-inner {background-color: rgba(67, 70, 83, 0.8) !important;}
+
+/* Glowy lightbulb button */
+.Glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}

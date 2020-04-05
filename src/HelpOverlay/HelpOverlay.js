@@ -42,7 +42,7 @@ const HelpOverlay = () => (
             trigger="click"
           >
             <Button variant="outline-light">
-              <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span>
+              <span role="img" className="Glow" aria-labelledby="jsx-a11y/accessible-emoji">💡</span>
             </Button>
           </OverlayTrigger>
         </div>
