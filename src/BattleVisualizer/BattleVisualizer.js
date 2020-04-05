@@ -5,6 +5,7 @@ import 'echarts-gl';
 import 'echarts-maps/world';
 
 class BattleVisualizer extends React.Component {
+  SCATTER_GL_SIZE = 3;
   echartsInstance = null;
   constructor(props) {
     super(props)
@@ -170,12 +171,9 @@ class BattleVisualizer extends React.Component {
           type: 'scatterGL',
           progressive: 1e6,
           coordinateSystem: 'geo',
-          symbolSize: 2,
-          zoomScale: 0.002,
+          symbolSize: self.SCATTER_GL_SIZE,
           blendMode: 'lighter',
-          postEffect: {
-            enable: true
-          },
+          
           zlevel: 101
         },
         {
