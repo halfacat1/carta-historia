@@ -4,15 +4,29 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './HelpOverlay.css';
 
-function renderTooltip(props) {
+function renderHelpTooltip(props) {
   return (
     <Tooltip {...props} >
-      <div>
-        <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱</span>: Pan & Zoom<br />
-        <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱</span>: Pan & Zoom<br />
-        <b>Mouse/Wheel + Map: </b>Pan & Zoom<br />
-        <b>Mouse + Map: </b>Pan & Zoom<br />
-      </div>
+      <h4>Carta Historia</h4>
+      <p>Visualize battles throughout history across the world!</p>
+      <h4>Instructions</h4>
+      <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span>: Pan & Zoom<br />
+      <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">📈 + ↔/</span>: Resize & Move the Year Filter<br />
+    </Tooltip>
+  );
+}
+
+function renderHouskeepingTooltip(props) {
+  return (
+    <Tooltip {...props} >
+      Author: <a href="http://github.com/halfacat1/" target="_blank" rel="noopener noreferrer">Han Z.</a>
+      <br />
+      <br />
+      Built with:&nbsp;
+      <a href="https://www.echartsjs.com/" target="_blank" rel="noopener noreferrer">ECharts</a>,&nbsp;
+      <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>
+      <br />
+      Powered by: <a href="https://www.wikidata.org/" target="_blank" rel="noopener noreferrer">Wikidata</a>
     </Tooltip>
   );
 }
@@ -22,22 +36,26 @@ const HelpOverlay = () => (
     <div className="container">
       <div className="row">
         <div className="col-xs HelpOverlayContainer">
-          <div className="HelpOverlayButton">
-            <OverlayTrigger
-              placement="left"
-              overlay={renderTooltip}
-              trigger="click"
-            >
-              <Button variant="outline-light">
-                <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span>
-              </Button>
-            </OverlayTrigger>
-          </div>
+          <OverlayTrigger
+            placement="left"
+            overlay={renderHelpTooltip}
+            trigger="click"
+          >
+            <Button variant="outline-light">
+              <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span>
+            </Button>
+          </OverlayTrigger>
         </div>
         <div className="col-xs HelpOverlayContainer">
-          <Button variant="outline-light" href="https://github.com/halfacat1/carta-historia/" target="_blank" rel="noopener noreferrer">
-            <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">👋</span>
-          </Button>
+          <OverlayTrigger
+            placement="bottom"
+            overlay={renderHouskeepingTooltip}
+            trigger="click"
+          >
+            <Button variant="outline-light">
+              <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">👋</span>
+            </Button>
+          </OverlayTrigger>
         </div>
       </div>
     </div>

@@ -185,7 +185,7 @@ class BattleVisualizer extends React.Component {
           yAxisIndex: 0,
           data: this.groupCountByYear(dataset.items),
           lineStyle: {
-            color: '#974716'
+            color: '#92B09B'
           },
           itemStyle: {
             color: '#fff',
