@@ -9,7 +9,7 @@ function renderHelpTooltip(props) {
     <Tooltip {...props} >
       <h4>Carta Historia</h4>
       <p>Visualize battles throughout history across the world!</p>
-      <h4>Instructions</h4>
+      <h6>Instructions</h6>
       <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span>: Pan & Zoom<br />
       <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">📈 + ↔/</span>: Resize & Move the Year Filter<br />
     </Tooltip>
