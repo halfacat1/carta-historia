@@ -10,3 +10,6 @@
     padding-right: 10px;
     text-align: right;
 }
+
+.bs-tooltip-left .arrow::before {border-left-color: rgba(67, 70, 83, 0.8) !important;}
+.tooltip-inner {background-color: rgba(67, 70, 83, 0.8) !important;}

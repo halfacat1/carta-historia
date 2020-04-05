@@ -6,30 +6,38 @@ import './HelpOverlay.css';
 
 function renderTooltip(props) {
   return (
-    <Tooltip id="button-tooltip" {...props}>
-      Simple tooltip
+    <Tooltip {...props} >
+      <div>
+        <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱</span>: Pan & Zoom<br />
+        <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱</span>: Pan & Zoom<br />
+        <b>Mouse/Wheel + Map: </b>Pan & Zoom<br />
+        <b>Mouse + Map: </b>Pan & Zoom<br />
+      </div>
     </Tooltip>
   );
 }
 
 const HelpOverlay = () => (
   <div className="HelpOverlay">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs HelpOverlayContainer">
+    <div className="container">
+      <div className="row">
+        <div className="col-xs HelpOverlayContainer">
           <div className="HelpOverlayButton">
             <OverlayTrigger
               placement="left"
-              delay={{ show: 250, hide: 400 }}
               overlay={renderTooltip}
               trigger="click"
             >
-              <Button variant="outline-light">💡</Button>
+              <Button variant="outline-light">
+                <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span>
+              </Button>
             </OverlayTrigger>
           </div>
         </div>
-        <div class="col-xs HelpOverlayContainer">
-          <Button variant="outline-light" href="https://github.com/halfacat1/carta-historia/" target="_blank" rel="noopener noreferrer">👋</Button>
+        <div className="col-xs HelpOverlayContainer">
+          <Button variant="outline-light" href="https://github.com/halfacat1/carta-historia/" target="_blank" rel="noopener noreferrer">
+            <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">👋</span>
+          </Button>
         </div>
       </div>
     </div>
