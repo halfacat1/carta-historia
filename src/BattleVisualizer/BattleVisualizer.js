@@ -6,7 +6,12 @@ import 'echarts-maps/world';
 
 class BattleVisualizer extends React.Component {
   SCATTER_GL_SIZE = 3;
+  TIMELINE_BACKGROUND_COLOR = 'rgba(47, 57, 77, 0.5)';
+  TIMELINE_LINE_COLOR = 'rgba(146, 176, 155, 0.5)';
+  TEXT_COLOR = '#fff';
+
   echartsInstance = null;
+
   constructor(props) {
     super(props)
     this.state = {};
@@ -100,7 +105,7 @@ class BattleVisualizer extends React.Component {
           min: Math.round(dataZoom.startValue, 0),
           max: Math.round(dataZoom.endValue, 0),
           textStyle: {
-            color: '#fff'
+            color: self.TEXT_COLOR
           },
         }
       });
@@ -128,14 +133,14 @@ class BattleVisualizer extends React.Component {
         },
         bottom: '30%',
         zlevel: 100,
-        zoom: 3
+        zoom: 4
       },
       grid: [
         {
           id: 'battles-time-line',
           top: '70%',
           show: true,
-          backgroundColor: '#2F394D',
+          backgroundColor: self.TIMELINE_BACKGROUND_COLOR,
           zlevel: 200
         }
       ],
@@ -149,7 +154,7 @@ class BattleVisualizer extends React.Component {
         type: 'value',
         axisLabel: {
           textStyle: {
-            color: '#fff'
+            color: self.TEXT_COLOR
           }
         },
         zlevel: 201
@@ -160,7 +165,7 @@ class BattleVisualizer extends React.Component {
         type: 'value',
         axisLabel: {
           textStyle: {
-            color: '#fff'
+            color: self.TEXT_COLOR
           }
         },
         zlevel: 201,
@@ -183,11 +188,11 @@ class BattleVisualizer extends React.Component {
           yAxisIndex: 0,
           data: this.groupCountByYear(dataset.items),
           lineStyle: {
-            color: '#92B09B'
+            color: self.TIMELINE_LINE_COLOR
           },
           itemStyle: {
-            color: '#fff',
-            borderColor: '#fff'
+            color: self.TEXT_COLOR,
+            borderColor: self.TEXT_COLOR
           },
           zlevel: 201,
         }
@@ -219,9 +224,9 @@ class BattleVisualizer extends React.Component {
             color: ['#000000']
           },
           textStyle: {
-            color: '#fff'
-          },
-          bottom: '30%',
+            color: self.TEXT_COLOR
+          },  
+          bottom: '35%',
           zlevel: 110
         }
       ]
