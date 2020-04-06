@@ -152,6 +152,10 @@ class BattleVisualizer extends React.Component {
         id: 'battles-time-line-x',
         gridId: 'battles-time-line',
         type: 'value',
+        name: 'Year',
+        nameTextStyle: {
+          color: self.TEXT_COLOR
+        },
         axisLabel: {
           textStyle: {
             color: self.TEXT_COLOR
@@ -163,6 +167,10 @@ class BattleVisualizer extends React.Component {
         id: 'battles-time-line-y',
         gridId: 'battles-time-line',
         type: 'value',
+        name: 'Count',
+        nameTextStyle: {
+          color: self.TEXT_COLOR
+        },
         axisLabel: {
           textStyle: {
             color: self.TEXT_COLOR
@@ -178,7 +186,7 @@ class BattleVisualizer extends React.Component {
           coordinateSystem: 'geo',
           symbolSize: self.SCATTER_GL_SIZE,
           blendMode: 'lighter',
-          
+
           zlevel: 101
         },
         {
@@ -218,15 +226,18 @@ class BattleVisualizer extends React.Component {
           min: -3000,
           max: 3000,
           inRange: {
-            color: ['#94b9af', '#90a583', '#9d8420', '#942911', '#593837']
+            color: ['#94b9af', '#90a583', '#9d8420', '#593837', '#942911']
           },
           outOfRange: {
-            color: ['#000000']
+            color: ['rgba(0, 0, 0, 0.5)']
           },
           textStyle: {
             color: self.TEXT_COLOR
-          },  
+          },
           bottom: '35%',
+          formatter: function (value1, value2) {
+            return Math.round(value1) + ' to ' + Math.round(value2);
+          },
           zlevel: 110
         }
       ]
