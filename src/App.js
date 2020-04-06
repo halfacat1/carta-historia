@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 import BattleVisualizer from './BattleVisualizer/BattleVisualizer';
 import HelpOverlay from './HelpOverlay/HelpOverlay';
 
