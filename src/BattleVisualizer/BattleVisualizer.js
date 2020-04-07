@@ -206,12 +206,12 @@ class BattleVisualizer extends React.Component {
           type: 'scatter',
           coordinateSystem: 'geo',
           data: self.getScatterSeriesData(dataset),
-          symbolSize: 4,
+          symbolSize: 15,
           itemStyle: {
-            borderColor: 'rgba(0, 0, 0, 0)',
-            color: 'rgba(0, 0, 0, 0)',
+            opacity: 0
           },
           large: true,
+          animation: false,
           tooltip: {
             formatter: function (params) {
               let item = params.value[2];
