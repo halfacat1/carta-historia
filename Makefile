@@ -12,17 +12,9 @@ start: build_dockerfile
 		carta-historia \
 		start
 
-.PHONY: install_client
-install_client: build_dockerfile
+.PHONY: setup
+setup: build_dockerfile
 	docker run -ti --rm --name carta-historia \
 		-v $(CURRENT_DIR):/workspace \
 		carta-historia \
 		install
-
-.PHONY: build_client
-build_client: build_dockerfile
-	docker run -ti --rm --name carta-historia \
-		-v $(CURRENT_DIR):/workspace \
-		--entrypoint yarn \
-		carta-historia \
-		build
