@@ -80,7 +80,14 @@ class BattleVisualizer extends React.Component {
     return tuples;
   }
   getShitDone(dataset) {
-
+    let mapData = dataset.items.map(function (item) {
+      return {
+        name: item.battleLabel,
+        value: [item.lng, item.lat, item]
+      };
+    });
+    // mapData = mapData.slice(1, 1000);
+    return mapData;
   }
 
   async componentDidMount() {
@@ -99,6 +106,7 @@ class BattleVisualizer extends React.Component {
     //   }
     // });
     // console.log(dataset);
+
     let geoCoordMap = {
       "Amsterdam": [4.895168, 52.370216],
       "Athens": [-83.357567, 33.951935],
@@ -261,11 +269,10 @@ class BattleVisualizer extends React.Component {
           });
         }
       }
-      console.log(mapData);
       return mapData;
     };
 
-    this.echartsInstance.on('dataZoom', function (ass) {
+    this.echartsInstance.on('dataZoom', function () {
       let dataZoom = self.echartsInstance.getOption().dataZoom[0];
       self.echartsInstance.setOption({
         visualMap: {
@@ -380,32 +387,33 @@ class BattleVisualizer extends React.Component {
           name: 'Prices and Earnings 2012',
           type: 'scatter',
           coordinateSystem: 'geo',
-          data: makeMapData(rawData),
-          activeOpacity: 1,
+          // data: makeMapData(rawData),
+          data: self.getShitDone(dataset),
+          // activeOpacity: 1,
           label: {
             formatter: '{b}',
             position: 'right',
             show: false
           },
-          symbolSize: 10,
+          symbolSize: 4,
           itemStyle: {
-            borderColor: '#fff',
-            color: '#577ceb',
+            // borderColor: '#fff',
+            borderColor: 'rgba(0, 0, 0, 0)',
+            color: 'rgba(0, 0, 0, 0)',
           },
           emphasis: {
             label: {
               show: true
             }
           },
+          large: true,
           tooltip: {
             formatter: function (params) {
-              var value = (params.value + '').split('.');
-              value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,') + '.' + value[1];
-              value = 'dicks';
-              return params.seriesName + '<br/>' + params.name + ' : ' + value;
+              let item = params.value[2];
+              return item.battleLabel;
             }
           },
-          zlevel: 202
+          zlevel: 110
         }
       ],
       tooltip: {
