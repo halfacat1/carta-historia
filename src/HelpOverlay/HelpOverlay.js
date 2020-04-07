@@ -10,8 +10,8 @@ function renderHelpTooltip(props) {
       <h4>Carta Historia</h4>
       <p>Visualize battles throughout history across the world!</p>
       <h6>Instructions</h6>
-      <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span>: Pan & Zoom<br />
-      <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">📈 + ↔/</span>: Resize & Move the Year Filter<br />
+      <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><br />Pan & Zoom<br /><br />
+      <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">📈 + ↔</span><br />Resize & Move the Year Filter<br />
     </Tooltip>
   );
 }
