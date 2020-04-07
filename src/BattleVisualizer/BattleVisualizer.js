@@ -79,6 +79,14 @@ class BattleVisualizer extends React.Component {
     tuples.sort((a, b) => a[0] > b[0] ? 1 : -1);
     return tuples;
   }
+  getScatterSeriesData(dataset) {
+    return dataset.items.map(function (item) {
+      return {
+        name: item.battleLabel,
+        value: [item.lng, item.lat, item]
+      };
+    });
+  }
 
   async componentDidMount() {
     let self = this;
@@ -97,11 +105,11 @@ class BattleVisualizer extends React.Component {
     // });
     // console.log(dataset);
 
-    this.echartsInstance.on('dataZoom', function (event) {
+    this.echartsInstance.on('dataZoom', function () {
       let dataZoom = self.echartsInstance.getOption().dataZoom[0];
       self.echartsInstance.setOption({
         visualMap: {
-          id: 'battles-geo-scatter',
+          id: 'battles-geo-scattergl',
           min: Math.round(dataZoom.startValue, 0),
           max: Math.round(dataZoom.endValue, 0),
           textStyle: {
@@ -109,6 +117,10 @@ class BattleVisualizer extends React.Component {
           },
         }
       });
+    });
+
+    this.echartsInstance.on('click', function (params) {
+      console.log(params);
     });
 
     var option = {
@@ -180,7 +192,7 @@ class BattleVisualizer extends React.Component {
       },
       series: [
         {
-          id: 'battles-geo-scatter',
+          id: 'battles-geo-scattergl',
           type: 'scatterGL',
           progressive: 1e6,
           coordinateSystem: 'geo',
@@ -188,6 +200,25 @@ class BattleVisualizer extends React.Component {
           blendMode: 'lighter',
 
           zlevel: 101
+        },
+        {
+          id: 'battles-geo-scatter',
+          type: 'scatter',
+          coordinateSystem: 'geo',
+          data: self.getScatterSeriesData(dataset),
+          symbolSize: 4,
+          itemStyle: {
+            borderColor: 'rgba(0, 0, 0, 0)',
+            color: 'rgba(0, 0, 0, 0)',
+          },
+          large: true,
+          tooltip: {
+            formatter: function (params) {
+              let item = params.value[2];
+              return item.battleLabel + '<br/>' + item.year;
+            }
+          },
+          zlevel: 110
         },
         {
           id: 'battles-time-line',
@@ -201,6 +232,9 @@ class BattleVisualizer extends React.Component {
           itemStyle: {
             color: self.TEXT_COLOR,
             borderColor: self.TEXT_COLOR
+          },
+          tooltip: {
+            show: false
           },
           zlevel: 201,
         }
@@ -216,9 +250,12 @@ class BattleVisualizer extends React.Component {
           zlevel: 201
         },
       ],
+      tooltip: {
+        trigger: 'item',
+      },
       visualMap: [
         {
-          id: 'battles-geo-scatter',
+          id: 'battles-geo-scattergl',
           seriesIndex: 0,
           dimension: 'year',
           type: 'piecewise',
