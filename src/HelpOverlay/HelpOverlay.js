@@ -110,7 +110,7 @@ class FullscreenOverlay extends React.Component {
           <h2>Carta Historia</h2>
           <p>Visualize battles throughout history across the world!</p>
           <h5>Instructions</h5>
-          <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><br />Click/Scroll/Tap//Pinch to interact with the map</p>
+          <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><br />Click/Scroll/Tap/Pinch to interact with the map</p>
           <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺🔴🟠🟢 + 🖱/👆</span><br />Each dot on the map is a battle, colored by its date<br />Hover/Click to see info </p>
           <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">⬇📈 + ↔</span><br /><strong>Timeline</strong> (bottom) <br /> Drag to resize & move the timeline on the bottom, to change the range of battles to highlight</p>
           <br />
@@ -118,7 +118,7 @@ class FullscreenOverlay extends React.Component {
           <p>
             (<span role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span> to reopen this)
             <br />
-            <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🖱/👆</span><b>anywhere to begin</b>
+            <h2><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🖱/👆</span>anywhere to begin!</h2>
           </p>
         </div>
       </div>
