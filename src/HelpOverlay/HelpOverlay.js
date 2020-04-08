@@ -6,16 +6,18 @@ import './HelpOverlay.css';
 
 
 class HelpOverlay extends React.Component {
-  renderHelpTooltip(props) {
-    return (
-      <Tooltip {...props} >
-        <h4>Carta Historia</h4>
-        <p>Visualize battles throughout history across the world!</p>
-        <h6>Instructions</h6>
-        <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><br />Pan & Zoom<br /><br />
-        <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">📈 + ↔</span><br />Resize & Move the Year Filter<br />
-      </Tooltip>
-    );
+  constructor(props) {
+    super(props);
+    this.state = {
+      showFullscreen: true
+    };
+
+    this.toggleFullscreenOverlay = this.toggleFullscreenOverlay.bind(this);
+  }
+  toggleFullscreenOverlay(props) {
+    this.setState({
+      showFullscreen: true
+    });
   }
   renderHouskeepingTooltip(props) {
     return (
@@ -38,16 +40,10 @@ class HelpOverlay extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-xs HelpOverlayContainer">
-              <FullscreenOverlay />
-              <OverlayTrigger
-                placement="left"
-                overlay={self.renderHelpTooltip}
-                trigger="click"
-              >
-                <Button variant="outline-light">
-                  <span role="img" className="Glow" aria-labelledby="jsx-a11y/accessible-emoji">💡</span>
-                </Button>
-              </OverlayTrigger>
+              <FullscreenOverlay show={self.state.showFullscreen} />
+              <Button variant="outline-light" onClick={self.toggleFullscreenOverlay}>
+                <span role="img" className="Glow" aria-labelledby="jsx-a11y/accessible-emoji">💡</span>
+              </Button>
             </div>
             <div className="col-xs HelpOverlayContainer">
               <OverlayTrigger
@@ -68,10 +64,10 @@ class HelpOverlay extends React.Component {
 }
 
 class FullscreenOverlay extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
+      show: props.show,
       style: {
         height: '100%',
         opacity: 1
@@ -81,31 +77,40 @@ class FullscreenOverlay extends React.Component {
     this.closeFullscreenOverlay = this.closeFullscreenOverlay.bind(this);
   }
 
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevProps.show && !prevState.show) {
+      this.openFullscreenOverlay();
+    }
+  }
+
   openFullscreenOverlay() {
-    let style = {
-      height: '100%',
-      opacity: 1
-    };
-    this.setState({ style });
+    this.setState({
+      show: true,
+      style: {
+        height: '100%',
+        opacity: 1
+      }
+    });
   }
 
   closeFullscreenOverlay() {
-    let style = {
-      height: 0,
-      opacity: 0,
-    };
-    this.setState({ style });
+    this.setState({
+      show: false,
+      style: {
+        height: 0,
+        opacity: 0,
+      }
+    });
   }
 
   render() {
     return (
       <div id="fullscreen-overlay">
-        <span style={{ fontSize: 30, cursor: "pointer" }} onClick={this.openFullscreenOverlay}>&#9776; open</span>
         <div
           className="overlay"
           style={this.state.style}
         >
-          <Button href="#" className="closebtn" onClick={this.closeFullscreenOverlay}>×</Button>
+          <Button href="#" onClick={this.closeFullscreenOverlay}>Close</Button>
           <div className="sidenav-container">
             <div className="text-center">
               <h2>Carta Historia</h2>
