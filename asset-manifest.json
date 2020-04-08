@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/carta-historia/static/css/main.bd1adaad.chunk.css",
-    "main.js": "/carta-historia/static/js/main.c033113a.chunk.js",
-    "main.js.map": "/carta-historia/static/js/main.c033113a.chunk.js.map",
+    "main.js": "/carta-historia/static/js/main.0a19536d.chunk.js",
+    "main.js.map": "/carta-historia/static/js/main.0a19536d.chunk.js.map",
     "runtime-main.js": "/carta-historia/static/js/runtime-main.a19d14c3.js",
     "runtime-main.js.map": "/carta-historia/static/js/runtime-main.a19d14c3.js.map",
     "static/css/2.de424728.chunk.css": "/carta-historia/static/css/2.de424728.chunk.css",
     "static/js/2.6096589b.chunk.js": "/carta-historia/static/js/2.6096589b.chunk.js",
     "static/js/2.6096589b.chunk.js.map": "/carta-historia/static/js/2.6096589b.chunk.js.map",
     "index.html": "/carta-historia/index.html",
-    "precache-manifest.c83f4becfdd190b50adfbf21e4c8b800.js": "/carta-historia/precache-manifest.c83f4becfdd190b50adfbf21e4c8b800.js",
+    "precache-manifest.236dc93021aeff6265f8773d341ad8d6.js": "/carta-historia/precache-manifest.236dc93021aeff6265f8773d341ad8d6.js",
     "service-worker.js": "/carta-historia/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/carta-historia/static/css/2.de424728.chunk.css.map",
     "static/css/main.bd1adaad.chunk.css.map": "/carta-historia/static/css/main.bd1adaad.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.6096589b.chunk.js",
     "static/css/main.bd1adaad.chunk.css",
-    "static/js/main.c033113a.chunk.js"
+    "static/js/main.0a19536d.chunk.js"
   ]
 }
