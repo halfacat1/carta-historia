@@ -38,6 +38,7 @@ class HelpOverlay extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-xs HelpOverlayContainer">
+              <FullscreenOverlay />
               <OverlayTrigger
                 placement="left"
                 overlay={self.renderHelpTooltip}
@@ -61,11 +62,68 @@ class HelpOverlay extends React.Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }
 }
 
+class FullscreenOverlay extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      style: {
+        height: '100%',
+        opacity: 1
+      }
+    };
+    this.openFullscreenOverlay = this.openFullscreenOverlay.bind(this);
+    this.closeFullscreenOverlay = this.closeFullscreenOverlay.bind(this);
+  }
+
+  openFullscreenOverlay() {
+    let style = {
+      height: '100%',
+      opacity: 1
+    };
+    this.setState({ style });
+  }
+
+  closeFullscreenOverlay() {
+    let style = {
+      height: 0,
+      opacity: 0,
+    };
+    this.setState({ style });
+  }
+
+  render() {
+    return (
+      <div id="fullscreen-overlay">
+        <span style={{ fontSize: 30, cursor: "pointer" }} onClick={this.openFullscreenOverlay}>&#9776; open</span>
+        <div
+          className="overlay"
+          style={this.state.style}
+        >
+          <Button href="#" className="closebtn" onClick={this.closeFullscreenOverlay}>×</Button>
+          <div className="sidenav-container">
+            <div className="text-center">
+              <h2>Carta Historia</h2>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+              <p>This is a sample input form</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default HelpOverlay;
