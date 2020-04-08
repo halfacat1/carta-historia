@@ -14,7 +14,7 @@ class HelpOverlay extends React.Component {
 
     this.toggleFullscreenOverlay = this.toggleFullscreenOverlay.bind(this);
   }
-  toggleFullscreenOverlay(props) {
+  toggleFullscreenOverlay() {
     this.setState({
       showFullscreen: true
     });
@@ -76,13 +76,11 @@ class FullscreenOverlay extends React.Component {
     this.openFullscreenOverlay = this.openFullscreenOverlay.bind(this);
     this.closeFullscreenOverlay = this.closeFullscreenOverlay.bind(this);
   }
-
   componentDidUpdate(prevProps, prevState, snapshot) {
     if (prevProps.show && !prevState.show) {
       this.openFullscreenOverlay();
     }
   }
-
   openFullscreenOverlay() {
     this.setState({
       show: true,
@@ -92,7 +90,6 @@ class FullscreenOverlay extends React.Component {
       }
     });
   }
-
   closeFullscreenOverlay() {
     this.setState({
       show: false,
@@ -102,28 +99,25 @@ class FullscreenOverlay extends React.Component {
       }
     });
   }
-
   render() {
     return (
-      <div id="fullscreen-overlay">
-        <div
-          className="overlay"
-          style={this.state.style}
-        >
-          <Button href="#" onClick={this.closeFullscreenOverlay}>Close</Button>
-          <div className="sidenav-container">
-            <div className="text-center">
-              <h2>Carta Historia</h2>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-              <p>This is a sample input form</p>
-            </div>
+      <div
+        className="overlay"
+        style={this.state.style}
+        onClick={this.closeFullscreenOverlay}
+      >
+        <div className="sidenav-container">
+          <div className="text-center">
+            <h2>Carta Historia</h2>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
+            <p>Hello</p>
           </div>
         </div>
       </div>
