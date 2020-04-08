@@ -123,10 +123,6 @@ class BattleVisualizer extends React.Component {
       });
     });
 
-    this.echartsInstance.on('click', function (params) {
-      console.log(params);
-    });
-
     var option = {
       backgroundColor: '#000',
       geo: {
