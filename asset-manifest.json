@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/carta-historia/static/css/main.bd1adaad.chunk.css",
-    "main.js": "/carta-historia/static/js/main.0a19536d.chunk.js",
-    "main.js.map": "/carta-historia/static/js/main.0a19536d.chunk.js.map",
-    "runtime-main.js": "/carta-historia/static/js/runtime-main.a19d14c3.js",
-    "runtime-main.js.map": "/carta-historia/static/js/runtime-main.a19d14c3.js.map",
+    "main.css": "/carta-historia/static/css/main.e0b36113.chunk.css",
+    "main.js": "/carta-historia/static/js/main.a02f5bf4.chunk.js",
+    "main.js.map": "/carta-historia/static/js/main.a02f5bf4.chunk.js.map",
+    "runtime-main.js": "/carta-historia/static/js/runtime-main.df0abc53.js",
+    "runtime-main.js.map": "/carta-historia/static/js/runtime-main.df0abc53.js.map",
     "static/css/2.de424728.chunk.css": "/carta-historia/static/css/2.de424728.chunk.css",
-    "static/js/2.6096589b.chunk.js": "/carta-historia/static/js/2.6096589b.chunk.js",
-    "static/js/2.6096589b.chunk.js.map": "/carta-historia/static/js/2.6096589b.chunk.js.map",
+    "static/js/2.b7e41a84.chunk.js": "/carta-historia/static/js/2.b7e41a84.chunk.js",
+    "static/js/2.b7e41a84.chunk.js.map": "/carta-historia/static/js/2.b7e41a84.chunk.js.map",
     "index.html": "/carta-historia/index.html",
-    "precache-manifest.236dc93021aeff6265f8773d341ad8d6.js": "/carta-historia/precache-manifest.236dc93021aeff6265f8773d341ad8d6.js",
+    "precache-manifest.b2efafb02196461169133758d7e8ccfc.js": "/carta-historia/precache-manifest.b2efafb02196461169133758d7e8ccfc.js",
     "service-worker.js": "/carta-historia/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/carta-historia/static/css/2.de424728.chunk.css.map",
-    "static/css/main.bd1adaad.chunk.css.map": "/carta-historia/static/css/main.bd1adaad.chunk.css.map",
-    "static/js/2.6096589b.chunk.js.LICENSE.txt": "/carta-historia/static/js/2.6096589b.chunk.js.LICENSE.txt"
+    "static/css/main.e0b36113.chunk.css.map": "/carta-historia/static/css/main.e0b36113.chunk.css.map",
+    "static/js/2.b7e41a84.chunk.js.LICENSE.txt": "/carta-historia/static/js/2.b7e41a84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a19d14c3.js",
+    "static/js/runtime-main.df0abc53.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.6096589b.chunk.js",
-    "static/css/main.bd1adaad.chunk.css",
-    "static/js/main.0a19536d.chunk.js"
+    "static/js/2.b7e41a84.chunk.js",
+    "static/css/main.e0b36113.chunk.css",
+    "static/js/main.a02f5bf4.chunk.js"
   ]
 }
