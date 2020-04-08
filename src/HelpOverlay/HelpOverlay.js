@@ -106,18 +106,20 @@ class FullscreenOverlay extends React.Component {
         style={this.state.style}
         onClick={this.closeFullscreenOverlay}
       >
-        <div className="sidenav-container">
-          <div className="text-center">
-            <h2>Carta Historia</h2>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
-            <p>Hello</p>
+        <div className="title">
+          <h2>Carta Historia</h2>
+          <p>Visualize battles throughout history across the world!</p>
+          <h5>Instructions</h5>
+          <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><br />Pan & Zoom<br /><br />
+          <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">📈 + ↔</span><br />Resize & Move the Year Filter<br />
+          <br />
+          <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><b>anywhere to begin</b></p>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xs helpButtonHelp">
+              Open this again
+            </div>
           </div>
         </div>
       </div>
