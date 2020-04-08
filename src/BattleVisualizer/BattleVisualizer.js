@@ -87,6 +87,10 @@ class BattleVisualizer extends React.Component {
       };
     });
   }
+  formatYear(value) {
+    let result = Math.round(value);
+    return Math.abs(result) + (result > 0 ? " CE" : " BCE");
+  }
 
   async componentDidMount() {
     let self = this;
@@ -143,14 +147,14 @@ class BattleVisualizer extends React.Component {
             areaColor: '#2a333d'
           }
         },
-        bottom: '30%',
-        zlevel: 100,
-        zoom: 4
+        zoom: 2,
+        bottom: '10%',
+        zlevel: 100
       },
       grid: [
         {
           id: 'battles-time-line',
-          top: '70%',
+          top: '90%',
           show: true,
           backgroundColor: self.TIMELINE_BACKGROUND_COLOR,
           zlevel: 200
@@ -171,23 +175,32 @@ class BattleVisualizer extends React.Component {
         axisLabel: {
           textStyle: {
             color: self.TEXT_COLOR
-          }
+          },
+          formatter: self.formatYear
         },
+        animation: false,
         zlevel: 201
       },
       yAxis: {
         id: 'battles-time-line-y',
         gridId: 'battles-time-line',
         type: 'value',
-        name: 'Count',
+        name: '# of Battles per Year',
         nameTextStyle: {
           color: self.TEXT_COLOR
         },
         axisLabel: {
           textStyle: {
             color: self.TEXT_COLOR
-          }
+          },
+          showMinLabel: false
         },
+        splitNumber: 1,
+        splitLine: {
+          show: false
+        },
+        silent: true,
+        animation: false,
         zlevel: 201,
       },
       series: [
@@ -215,7 +228,7 @@ class BattleVisualizer extends React.Component {
           tooltip: {
             formatter: function (params) {
               let item = params.value[2];
-              return item.battleLabel + '<br/>' + item.year;
+              return item.battleLabel + '<br/>' + self.formatYear(item.year);
             }
           },
           zlevel: 110
@@ -233,9 +246,11 @@ class BattleVisualizer extends React.Component {
             color: self.TEXT_COLOR,
             borderColor: self.TEXT_COLOR
           },
+          symbolSize: 1,
           tooltip: {
             show: false
           },
+          animation: false,
           zlevel: 201,
         }
       ],
@@ -271,9 +286,9 @@ class BattleVisualizer extends React.Component {
           textStyle: {
             color: self.TEXT_COLOR
           },
-          bottom: '35%',
+          bottom: '15%',
           formatter: function (value1, value2) {
-            return Math.round(value1) + ' to ' + Math.round(value2);
+            return self.formatYear(value1) + ' to ' + self.formatYear(value2);
           },
           zlevel: 110
         }
