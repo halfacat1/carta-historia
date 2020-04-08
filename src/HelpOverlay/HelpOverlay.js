@@ -110,17 +110,16 @@ class FullscreenOverlay extends React.Component {
           <h2>Carta Historia</h2>
           <p>Visualize battles throughout history across the world!</p>
           <h5>Instructions</h5>
-          <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><br />Pan & Zoom<br /><br />
-          <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">📈 + ↔</span><br />Resize & Move the Year Filter<br />
+          <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><br />Click/Scroll/Tap//Pinch to interact with the map</p>
+          <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺🔴🟠🟢 + 🖱/👆</span><br />Each dot on the map is a battle, colored by its date<br />Hover/Click to see info </p>
+          <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">⬇📈 + ↔</span><br /><strong>Timeline</strong> (bottom) <br /> Drag to resize & move the timeline on the bottom, to change the range of battles to highlight</p>
           <br />
-          <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺 + 🖱/👆🤏</span><b>anywhere to begin</b></p>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-xs helpButtonHelp">
-              Open this again
-            </div>
-          </div>
+          <br />
+          <p>
+            (<span role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span> to reopen this)
+            <br />
+            <span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🖱/👆</span><b>anywhere to begin</b>
+          </p>
         </div>
       </div>
     );
