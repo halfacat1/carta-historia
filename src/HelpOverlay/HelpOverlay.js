@@ -4,7 +4,6 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './HelpOverlay.css';
 
-
 class HelpOverlay extends React.Component {
   constructor(props) {
     super(props);
@@ -114,12 +113,10 @@ class FullscreenOverlay extends React.Component {
           <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🗺🔴🟠🟢 + 🖱/👆</span><br />Each dot on the map is a battle, colored by its date<br />Hover/Click to see info </p>
           <p><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">⬇📈 + ↔</span><br /><strong>Timeline</strong> (bottom) <br /> Drag to resize & move the timeline on the bottom, to change the range of battles to highlight</p>
           <br />
-          <br />
           <p>
-            (<span class="Glow" role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span> to reopen this)
-            <br />
-            <h2><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🖱/👆</span>anywhere to begin!</h2>
+            <span className="Glow" role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span> to reopen this overlay
           </p>
+            <h2><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🖱/👆</span>anywhere to begin!</h2>
         </div>
       </div>
     );
