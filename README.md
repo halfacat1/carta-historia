@@ -6,8 +6,8 @@
 
 ## Supported Platforms
 - Desktop browser support is top priority
-- Chome provides the best performance, followed by Firefox & Edge
-- Mobile/touch support exists but the experience/performance is limited
+- Chrome provides the best performance, followed by Firefox & Edge
+- Mobile/touch support exists but the experience is limited by display size
 
 ## Development
 ### Requirements

@@ -1,8 +1,9 @@
 import React from 'react';
-import './BattleVisualizer.css';
 import echarts from 'echarts';
 import 'echarts-gl';
 import 'echarts-maps/world';
+import './BattleVisualizer.css';
+import ApiProxy from '../api/apiProxy'
 
 class BattleVisualizer extends React.Component {
   SCATTER_GL_SIZE = 3;
@@ -11,59 +12,14 @@ class BattleVisualizer extends React.Component {
   TEXT_COLOR = '#fff';
 
   echartsInstance = null;
+  apiProxy = null;
 
   constructor(props) {
-    super(props)
-    this.state = {};
+    super(props);
+    this.apiProxy = new ApiProxy();
   }
-  async loadData() {
-    let response = await fetch(`${window.location.href}/db.csv`);
-    return this.createDatasetFromCsv(await response.text());
-  }
-  createDatasetFromCsv(input) {
-    let result = {
-      headers: [],
-      items: []
-    };
-    let rows = input.split('\n');
-    if (rows.length < 1) return result;
-    rows.pop();
-    let headers = rows.shift().split(',');
-    let items = rows.map(function (row) {
-      let item = {};
-      let fields = row.split(',');
-      for (let i = 0; i < headers.length; i++) {
-        item[headers[i]] = fields[i];
-      }
-      return item;
-    });
-    result.headers = headers;
-    result.items = items;
-    return result;
-  }
-  cleanYearInDataset(dataset) {
-    let results = dataset.items.reduce(function (accumulator, current) {
-      let year = parseInt(current.year);
-      if (!isNaN(year)) {
-        current.year = year;
-        accumulator.push(current);
-      }
-      return accumulator;
-    }, []);
-    dataset.items = results;
-  }
-  addGeoToDataset(dataset) {
-    let regex = /Point\((-?[0-9]+[.]?[0-9]*) (-?[0-9]+[.]?[0-9]*)\)/;
-    dataset.headers = dataset.headers.concat(['lat', 'lng']);
-    dataset.items.forEach(item => {
-      let captures = regex.exec(item['locationCoordinates']);
-      if (captures) {
-        item['lat'] = captures[2];
-        item['lng'] = captures[1];
-      }
-    });
-  }
-  groupCountByYear(items) {
+
+  _getBattleCountByYear(items) {
     let results = items.reduce(function (accumulator, current) {
       let currentPropValue = current['year'];
       if (!(currentPropValue in accumulator)) {
@@ -79,7 +35,7 @@ class BattleVisualizer extends React.Component {
     tuples.sort((a, b) => a[0] > b[0] ? 1 : -1);
     return tuples;
   }
-  getScatterSeriesData(dataset) {
+  _getScatterSeriesData(dataset) {
     return dataset.items.map(function (item) {
       return {
         name: item.battleLabel,
@@ -87,7 +43,7 @@ class BattleVisualizer extends React.Component {
       };
     });
   }
-  formatYear(value) {
+  _formatYear(value) {
     let result = Math.round(value);
     return Math.abs(result) + (result > 0 ? " CE" : " BCE");
   }
@@ -96,18 +52,11 @@ class BattleVisualizer extends React.Component {
     let self = this;
     this.echartsInstance = echarts.init(document.getElementById('echarts_container'));
 
-    let dataset = await this.loadData();
-    this.cleanYearInDataset(dataset);
-    this.addGeoToDataset(dataset);
+    let dataset = await this.apiProxy.loadDataset();
 
-    // Test code
-    // let southDeerfield = null;
-    // dataset.items.forEach(item => {
-    //   if (item['battle'] === 'http://www.wikidata.org/entity/Q885253') {
-    //     southDeerfield = item;
-    //   }
-    // });
-    // console.log(dataset);
+    window.onresize = function () {
+      self.echartsInstance.resize();
+    };
 
     this.echartsInstance.on('dataZoom', function () {
       let dataZoom = self.echartsInstance.getOption().dataZoom[0];
@@ -172,7 +121,7 @@ class BattleVisualizer extends React.Component {
           textStyle: {
             color: self.TEXT_COLOR
           },
-          formatter: self.formatYear
+          formatter: self._formatYear
         },
         animation: false,
         zlevel: 201
@@ -214,7 +163,7 @@ class BattleVisualizer extends React.Component {
           id: 'battles-geo-scatter',
           type: 'scatter',
           coordinateSystem: 'geo',
-          data: self.getScatterSeriesData(dataset),
+          data: self._getScatterSeriesData(dataset),
           symbolSize: 15,
           itemStyle: {
             opacity: 0
@@ -224,7 +173,7 @@ class BattleVisualizer extends React.Component {
           tooltip: {
             formatter: function (params) {
               let item = params.value[2];
-              return item.battleLabel + '<br/>' + self.formatYear(item.year);
+              return item.battleLabel + '<br/>' + self._formatYear(item.year);
             }
           },
           zlevel: 110
@@ -234,7 +183,7 @@ class BattleVisualizer extends React.Component {
           type: 'line',
           xAxisIndex: 0,
           yAxisIndex: 0,
-          data: this.groupCountByYear(dataset.items),
+          data: this._getBattleCountByYear(dataset.items),
           lineStyle: {
             color: self.TIMELINE_LINE_COLOR
           },
@@ -284,7 +233,7 @@ class BattleVisualizer extends React.Component {
           },
           bottom: '15%',
           formatter: function (value1, value2) {
-            return self.formatYear(value1) + ' to ' + self.formatYear(value2);
+            return self._formatYear(value1) + ' to ' + self._formatYear(value2);
           },
           zlevel: 110
         }
@@ -292,10 +241,6 @@ class BattleVisualizer extends React.Component {
     };
 
     this.echartsInstance.setOption(option, true);
-
-    window.onresize = function () {
-      self.echartsInstance.resize();
-    };
   }
   render() {
     return (
