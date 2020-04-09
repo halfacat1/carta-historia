@@ -116,7 +116,7 @@ class FullscreenOverlay extends React.Component {
           <br />
           <br />
           <p>
-            (<span role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span> to reopen this)
+            (<span class="Glow" role="img" aria-labelledby="jsx-a11y/accessible-emoji">💡</span> to reopen this)
             <br />
             <h2><span role="img" aria-labelledby="jsx-a11y/accessible-emoji">🖱/👆</span>anywhere to begin!</h2>
           </p>
