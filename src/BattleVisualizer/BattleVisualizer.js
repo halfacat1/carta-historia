@@ -77,18 +77,16 @@ class BattleVisualizer extends React.Component {
       geo: {
         map: 'world',
         roam: true,
-        label: {
-          emphasis: {
-            show: false
-          }
-        },
         silent: true,
         itemStyle: {
-          normal: {
-            areaColor: '#323c48',
-            borderColor: '#111'
+          areaColor: '#323c48',
+          borderColor: '#111'
+        },
+        emphasis: {
+          label: {
+            show: false
           },
-          emphasis: {
+          itemStyle: {
             areaColor: '#2a333d'
           }
         },
@@ -118,9 +116,7 @@ class BattleVisualizer extends React.Component {
           color: self.TEXT_COLOR
         },
         axisLabel: {
-          textStyle: {
-            color: self.TEXT_COLOR
-          },
+          color: self.TEXT_COLOR,
           formatter: self._formatYear
         },
         animation: false,
@@ -135,9 +131,7 @@ class BattleVisualizer extends React.Component {
           color: self.TEXT_COLOR
         },
         axisLabel: {
-          textStyle: {
-            color: self.TEXT_COLOR
-          },
+          color: self.TEXT_COLOR,
           showMinLabel: false
         },
         splitNumber: 1,
