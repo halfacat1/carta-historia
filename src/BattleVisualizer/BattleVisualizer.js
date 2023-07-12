@@ -1,5 +1,5 @@
 import React from 'react';
-import echarts from 'echarts';
+import * as echarts from 'echarts';
 import 'echarts-gl';
 import 'echarts-maps/world';
 import './BattleVisualizer.css';
